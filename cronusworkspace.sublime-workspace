@@ -4,8 +4,48 @@
 		"selected_items":
 		[
 			[
+				"getpar",
+				"getpartyname	(cronus.YAML-tmLanguage)"
+			],
+			[
+				"get",
+				"getchildid"
+			],
+			[
+				"getch",
+				"getchildid	(cronus.YAML-tmLanguage)"
+			],
+			[
+				"getnpc",
+				"getnpcid	(cronus.YAML-tmLanguage)"
+			],
+			[
+				"getchar",
+				"getcharid	(cronus.YAML-tmLanguage)"
+			],
+			[
+				"char",
+				"charid2rid"
+			],
+			[
 				"str",
-				"string"
+				"strcharinfo"
+			],
+			[
+				"clar",
+				"cleararray"
+			],
+			[
+				"clear",
+				"cleararray	(cronus.YAML-tmLanguage)"
+			],
+			[
+				"valor",
+				"valores	(eventozeny.txt)"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
 			],
 			[
 				"beg",
@@ -60,10 +100,6 @@
 				"include	include:"
 			],
 			[
-				"for",
-				"for	for (…) {…}"
-			],
-			[
 				"css",
 				"css/style.css"
 			],
@@ -84,18 +120,21 @@
 	"buffers":
 	[
 		{
+			"contents": "{\n        \"scope\": \"source.cronus - variable.other.cronus\",\n\n        \"completions\":\n		[\n			{ \"trigger\": \"mes\", \"contents\": \"mes \\\"$1\\\";\" },\n			{ \"trigger\": \"next\", \"contents\": \"next;\" },\n			{ \"trigger\": \"close\", \"contents\": \"close;\" },\n			{ \"trigger\": \"close2\", \"contents\": \"close2;\" },\n			{ \"trigger\": \"set\", \"contents\": \"set ${1:variável}, ${2:expressão};\" },\n			{ \"trigger\": \"setd\", \"contents\": \"setd \\\"${1:nome da variável}\\\", ${2:valor};\" },\n			{ \"trigger\": \"getd\", \"contents\": \"getd \\\"${1:nome da variável}\\\";\" },\n			{ \"trigger\": \"getvariableofnpc\", \"contents\": \"getvariableofnpc ${1:variável}, \\\"${2:nome do NPC}\\\";\" },\n			{ \"trigger\": \"goto\", \"contents\": \"goto ${1:label};\" },\n			{ \"trigger\": \"menu\", \"contents\": \"menu \\\"${1:Texto da opção 1}\\\", ${2:label opção 1}, \\\"${3:Texto da opção 2}\\\", ${4:label opção 2}, ${5:...};\" },\n			{ \"trigger\": \"select\", \"contents\": \"select(\\\"${1:opções separadas por :}\\\")\" },\n			{ \"trigger\": \"prompt\", \"contents\": \"prompt(\\\"${1:opções separadas por :}\\\")\" },\n			{ \"trigger\": \"input\", \"contents\": \"input ${1:variável};\" },\n			{ \"trigger\": \"callfunc\", \"contents\": \"callfunc ${1:função};\" },\n			{ \"trigger\": \"callsub\", \"contents\": \"callsub ${1:label};\" },\n			{ \"trigger\": \"getarg\", \"contents\": \"getarg (${1:label})\" },\n			{ \"trigger\": \"getargcount\", \"contents\": \"getargcount()\" },\n			{ \"trigger\": \"return\", \"contents\": \"return ${1:valor};\" },\n			{ \"trigger\": \"function\", \"contents\": \"function ${1:nome};\" },\n			{ \"trigger\": \"is_function\", \"contents\": \"is_function (${1:nome})\" },\n			{ \"trigger\": \"if\", \"contents\": \"if (${1:teste})\" },\n			{ \"trigger\": \"while\", \"contents\": \"while (${1:condição}) ${2:evento}\" },\n			{ \"trigger\": \"for\", \"contents\": \"for (${1:variável} = 0; $1 < ${2:limite}; $1++){${3:bloco de comandos}}\" },\n			{ \"trigger\": \"do\", \"contents\": \"do {${1:comandos} while (${2:condição});\" },\n			{ \"trigger\": \"freeloop\", \"contents\": \"freeloop(${1:1=ativado|0=desativado});\" },\n			{ \"trigger\": \"setarray\", \"contents\": \"setarray ${1:array}, ${2:valores}\" },\n			{ \"trigger\": \"cleararray\", \"contents\": \"cleararray ${1:array}[${2:primeiro valor}], ${3:valor}, ${4:quantidade de valores}\" },\n			{ \"trigger\": \"copyarray\", \"contents\": \"copyarray ${1:array destino}[${2:primeiro valor}], ${3:array fonte}[${4:primeiro valor}], ${5:quantidade de valores}\" },\n			{ \"trigger\": \"deletearray\", \"contents\": \"deletearray ${1:array}[${2:primeiro valor}], ${3:quantidade de valores}\" },\n			{ \"trigger\": \"strcharinfo\", \"contents\": \"strcharinfo(${1:tipo(0=nome|1=party|2=guild|3=mapa)})\" },\n			{ \"trigger\": \"strnpcinfo\", \"contents\": \"strnpcinfo(${1:tipo(0=nome completo|1=parte visível|2=parte invisível|3=nome único|4=mapa)})\" },\n			{ \"trigger\": \"charid2rid\", \"contents\": \"charid2rid(${1:ID})\" },\n			{ \"trigger\": \"getarraysize\", \"contents\": \"getarraysize(${1:ID})\" },\n			{ \"trigger\": \"getelementofarray\", \"contents\": \"getelementofarray(${1:array},${2:índice})\" },\n			{ \"trigger\": \"readparam\", \"contents\": \"readparam(${1:parâmetro(número ou nome)})\" },\n			{ \"trigger\": \"getcharid\", \"contents\": \"getcharid(${1:tipo(0=charID|1=partyID|2=guildID|3=accountID|4=BGID)})\" },\n			{ \"trigger\": \"getnpcid\", \"contents\": \"getnpcid(${1:tipo})\" },\n			{ \"trigger\": \"getchildid\", \"contents\": \"getchildid()\" },\n			{ \"trigger\": \"getmotherid\", \"contents\": \"getmotherid()\" },\n			{ \"trigger\": \"getfatherid\", \"contents\": \"getfatherid()\" },\n			{ \"trigger\": \"ispartneron\", \"contents\": \"ispartneron()\" },\n			{ \"trigger\": \"getpartnerid\", \"contents\": \"getpartnerid()\" },\n			{ \"trigger\": \"getpartyname\", \"contents\": \"getpartyname(${1:ID})\" },\n			{ \"trigger\": \"getpartyname\", \"contents\": \"getpartyname(${1:ID})\" },\n\n\n\n\n\n\n\n			{ \"trigger\": \"testedecontents\", \"contents\": \"colours.subtract(${1:colours}, ${2:colour1}, ${3:colour2}, ${4:...})\"},\n\n\n			//Map Names \n\n			\"alb_ship 1\",\"alb2trea\",\"alberta\",\"alberta_in\",\"alde_dun01\",\"alde_dun02\",\"alde_dun03\",\"alde_dun04\",\"aldeba_in\",\"aldebaran\",\"anthell01\",\"anthell02\",\"arena_room\",\"c_tower1\",\"c_tower2\",\"c_tower3\",\"c_tower4\",\"force_1-1\",\"force_1-2\",\"force_1-3\",\"force_2-1\",\"force_2-2\",\"force_2-3\",\"force_3-1\",\"force_3-2\",\"force_3-3\",\"gef_dun00\",\"gef_dun01\",\"gef_dun02\",\"gef_dun03\",\"gef_fild00\",\"gef_fild01\",\"gef_fild02\",\"gef_fild03\",\"gef_fild04\",\"gef_fild05\",\"gef_fild06\",\"gef_fild07\",\"gef_fild08\",\"gef_fild09\",\"gef_fild10\",\"gef_fild11\",\"gef_fild12\",\"gef_fild13\",\"gef_fild14\",\"gef_tower\",\"geffen\",\"geffen_in\",\"gl_cas01\",\"gl_cas02\",\"gl_church\",\"gl_chyard\",\"gl_dun01\",\"gl_dun02\",\"gl_in01\",\"gl_knt01\",\"gl_knt02\",\"gl_prison\",\"gl_prison1\",\"gl_sew01\",\"gl_sew02\",\"gl_sew03\",\"gl_sew04\",\"gl_step\",\"glast_01\",\"hunter_1-1\",\"hunter_2-1\",\"hunter_3-1\",\"in_hunter\",\"in_moc_16\",\"in_orcs01\",\"in_sphinx1\",\"in_sphinx2\",\"in_sphinx3\",\"in_sphinx4\",\"in_sphinx5\",\"iz_dun00\",\"iz_dun01\",\"iz_dun02\",\"iz_dun03\",\"iz_dun04\",\"job_sword1\",\"izlu2dun\",\"izlude\",\"izlude_in\",\"job_thief1\",\"knight_1-1\",\"knight_2-1\",\"knight_3-1\",\"mjo_dun01\",\"mjo_dun02\",\"mjo_dun03\",\"mjolnir_01\",\"mjolnir_02\",\"mjolnir_03\",\"mjolnir_04\",\"mjolnir_05\",\"mjolnir_06\",\"mjolnir_07\",\"mjolnir_08\",\"mjolnir_09\",\"mjolnir_10\",\"mjolnir_11\",\"mjolnir_12\",\"moc_castle\",\"moc_fild01\",\"moc_fild02\",\"moc_fild03\",\"moc_fild04\",\"moc_fild05\",\"moc_fild06\",\"moc_fild07\",\"moc_fild08\",\"moc_fild09\",\"moc_fild10\",\"moc_fild11\",\"moc_fild12\",\"moc_fild13\",\"moc_fild14\",\"moc_fild15\",\"moc_fild16\",\"moc_fild17\",\"moc_fild18\",\"moc_fild19\",\"moc_pryd01\",\"moc_pryd02\",\"moc_pryd03\",\"moc_pryd04\",\"moc_pryd05\",\"moc_pryd06\",\"moc_prydb1\",\"moc_ruins\",\"monk_in\",\"morocc\",\"morocc_in\",\"new_1-1\",\"new_1-2\",\"new_1-3\",\"new_1-4\",\"new_2-1\",\"new_2-2\",\"new_2-3\",\"new_2-4\",\"new_3-1\",\"new_3-2\",\"new_3-3\",\"new_3-4\",\"new_4-1\",\"new_4-2\",\"new_4-3\",\"new_4-4\",\"new_5-1\",\"new_5-2\",\"new_5-3\",\"new_5-4\",\"orcsdun01\",\"orcsdun02\",\"ordeal_1-1\",\"ordeal_1-2\",\"ordeal_1-3\",\"ordeal_1-4\",\"ordeal_2-1\",\"ordeal_2-2\",\"ordeal_2-3\",\"ordeal_2-4\",\"ordeal_3-1\",\"ordeal_3-2\",\"ordeal_3-3\",\"ordeal_3-4\",\"pay_arche\",\"pay_dun00\",\"pay_dun01\",\"pay_dun02\",\"pay_dun03\",\"pay_dun04\",\"pay_fild01\",\"pay_fild02\",\"pay_fild03\",\"pay_fild04\",\"pay_fild05\",\"pay_fild06\",\"pay_fild07\",\"pay_fild08\",\"pay_fild09\",\"pay_fild10\",\"pay_fild11\",\"payon\",\"payon_in01\",\"payon_in02\",\"priest_1-1\",\"priest_2-1\",\"priest_3-1\",\"prontera\",\"prt_are_in\",\"prt_are01\",\"pvp_room\",\"prt_castle\",\"prt_church\",\"prt_fild00\",\"prt_fild01\",\"prt_fild02\",\"prt_fild03\",\"prt_fild04\",\"prt_fild05\",\"prt_fild06\",\"prt_fild07\",\"prt_fild08\",\"prt_fild09\",\"prt_fild10\",\"prt_fild11\",\"prt_in\",\"prt_maze01\",\"prt_maze02\",\"prt_maze03\",\"prt_monk\",\"prt_sewb1\",\"prt_sewb2\",\"prt_sewb3\",\"prt_sewb4\",\"pvp_2vs2\",\"pvp_c_room\",\"pvp_n_1-1\",\"pvp_n_1-2\",\"pvp_n_1-3\",\"pvp_n_1-4\",\"pvp_n_1-5\",\"pvp_n_2-1\",\"pvp_n_2-2\",\"pvp_n_2-3\",\"pvp_n_2-4\",\"pvp_n_2-5\",\"pvp_n_3-1\",\"pvp_n_3-2\",\"pvp_n_3-3\",\"pvp_n_3-4\",\"pvp_n_3-5\",\"pvp_n_4-1\",\"pvp_n_4-2\",\"pvp_n_4-3\",\"pvp_n_4-4\",\"pvp_n_4-5\",\"pvp_n_5-1\",\"pvp_n_5-2\",\"pvp_n_5-3\",\"pvp_n_5-4\",\"pvp_n_5-5\",\"pvp_n_6-1\",\"pvp_n_6-2\",\"pvp_n_6-3\",\"pvp_n_6-4\",\"pvp_n_6-5\",\"pvp_n_7-1\",\"pvp_n_7-2\",\"pvp_n_7-3\",\"pvp_n_7-4\",\"pvp_n_7-5\",\"pvp_n_8-1\",\"pvp_n_8-2\",\"pvp_n_8-3\",\"pvp_n_8-4\",\"pvp_n_8-5\",\"pvp_n_room\",\"pvp_y_1-1\",\"pvp_y_1-2\",\"pvp_y_1-3\",\"pvp_y_1-4\",\"pvp_y_1-5\",\"pvp_y_2-1\",\"pvp_y_2-2\",\"pvp_y_2-3\",\"pvp_y_2-4\",\"pvp_y_2-5\",\"pvp_y_3-1\",\"pvp_y_3-2\",\"pvp_y_3-3\",\"pvp_y_3-4\",\"pvp_y_3-5\",\"pvp_y_4-1\",\"pvp_y_4-2\",\"pvp_y_4-3\",\"pvp_y_4-4\",\"pvp_y_4-5\",\"pvp_y_5-1\",\"pvp_y_5-2\",\"pvp_y_5-3\",\"pvp_y_5-4\",\"pvp_y_5-5\",\"pvp_y_6-1\",\"pvp_y_6-2\",\"pvp_y_6-3\",\"pvp_y_6-4\",\"pvp_y_6-5\",\"pvp_y_7-1\",\"pvp_y_7-2\",\"pvp_y_7-3\",\"pvp_y_7-4\",\"pvp_y_7-5\",\"pvp_y_8-1\",\"pvp_y_8-2\",\"pvp_y_8-3\",\"pvp_y_8-4\",\"pvp_y_8-5\",\"pvp_y_room\",\"sword_1-1\",\"sword_2-1\",\"sword_3-1\",\"treasure01\",\"treasure02\",\"wizard_1-1\",\"wizard_2-1\",\"wizard_3-1\",\"xmas\",\"xmas_dun01\",\"xmas_dun02\",\"xmas_fild01\",\"xmas_in\",\"beach_dun\",\"beach_dun2\",\"beach_dun3\",\"cmd_fild01\",\"cmd_fild02\",\"cmd_fild03\",\"cmd_fild04\",\"cmd_fild05\",\"cmd_fild06\",\"cmd_fild07\",\"cmd_fild08\",\"cmd_fild09\",\"cmd_in01\",\"cmd_in02\",\"comodo\",\"quiz_00\",\"quiz_01\",\"g_room1-1\",\"g_room1-2\",\"g_room1-3\",\"g_room2\",\"tur_dun01\",\"tur_dun02\",\"tur_dun03\",\"tur_dun04\",\"tur_dun05\",\"tur_dun06\",\"alde_gld\",\"aldeg_cas01\",\"aldeg_cas02\",\"aldeg_cas03\",\"aldeg_cas04\",\"aldeg_cas05\",\"gefg_cas01\",\"gefg_cas02\",\"gefg_cas03\",\"gefg_cas04\",\"gefg_cas05\",\"gld_dun01\",\"gld_dun02\",\"gld_dun03\",\"gld_dun04\",\"guild_room\",\"guild_vs1\",\"guild_vs2\",\"guild_vs3\",\"guild_vs4\",\"guild_vs5\",\"guild_vs1-1\",\"guild_vs1-2\",\"guild_vs1-3\",\"guild_vs1-4\",\"guild_vs2-1\",\"guild_vs2-2\",\"job_hunte\",\"job_knt\",\"job_prist\",\"job_wiz\",\"pay_gld\",\"payg_cas01\",\"payg_cas02\",\"payg_cas03\",\"payg_cas04\",\"payg_cas05\",\"prt_gld\",\"prtg_cas01\",\"prtg_cas02\",\"prtg_cas03\",\"prtg_cas04\",\"prtg_cas05\",\"alde_alche\",\"in_rogue\",\"job_cru\",\"job_duncer\",\"job_monk\",\"job_sage\",\"mag_dun01\",\"mag_dun02\",\"monk_test\",\"quiz_test\",\"yuno\",\"yuno_fild01\",\"yuno_fild02\",\"yuno_fild03\",\"yuno_fild04\",\"yuno_in01\",\"yuno_in02\",\"yuno_in03\",\"yuno_in04\",\"yuno_in05\",\"ama_dun01\",\"ama_dun02\",\"ama_dun03\",\"ama_fild01\",\"ama_in01\",\"ama_in02\",\"ama_test\",\"amatsu\",\"gon_dun01\",\"gon_dun02\",\"gon_dun03\",\"gon_fild01\",\"gon_in\",\"gon_test\",\"gonryun\",\"sec_in01\",\"sec_in02\",\"sec_pri\",\"umbala\",\"um_dun01\",\"um_dun02\",\"um_fild01\",\"um_fild02\",\"um_fild03\",\"um_fild04\",\"um_in\",\"niflheim\",\"nif_fild01\",\"nif_fild02\",\"nif_in\",\"yggdrasil01\",\"valkyrie\",\"himinn\",\"lou_in01\",\"lou_in02\",\"lou_dun03\",\"lou_dun02\",\"lou_dun01\",\"lou_fild01\",\"louyang\",\"siege_test\",\"n_castle\",\"nguild_gef\",\"nguild_prt\",\"nguild_pay\",\"nguild_alde\",\"jawaii\",\"jawaii_in\",\"gefenia01\",\"gefenia02\",\"gefenia03\",\"gefenia04\",\"new_zone01\",\"new_zone02\",\"new_zone03\",\"new_zone04\",\"payon_in03\",\"ayothaya\",\"ayo_in01\",\"ayo_in02\",\"ayo_fild01\",\"ayo_fild02\",\"ayo_dun01\",\"ayo_dun02\",\"que_god01\",\"que_god02\",\"yuno_fild05\",\"yuno_fild07\",\"yuno_fild08\",\"yuno_fild09\",\"yuno_fild11\",\"yuno_fild12\",\"alde_tt02\",\"turbo_n_1\",\"turbo_n_4\",\"turbo_n_8\",\"turbo_n_16\",\"turbo_e_4\",\"turbo_e_8\",\"turbo_e_16\",\"turbo_room\",\"airplane\",\"airport\",\"einbech\",\"einbroch\",\"ein_dun01\",\"ein_dun02\",\"ein_fild06\",\"ein_fild07\",\"ein_fild08\",\"ein_fild09\",\"ein_fild10\",\"ein_in01\",\"que_sign01\",\"que_sign02\",\"ein_fild03\",\"ein_fild04\",\"lhz_fild02\",\"lhz_fild03\",\"yuno_pre\",\"lhz_fild01\",\"lighthalzen\",\"lhz_in01\",\"lhz_in02\",\"lhz_in03\",\"lhz_que01\",\"lhz_dun01\",\"lhz_dun02\",\"lhz_dun03\",\"lhz_cube\",\"juperos_01\",\"juperos_02\",\"jupe_area1\",\"jupe_area2\",\"jupe_core\",\"jupe_ele\",\"jupe_ele_r\",\"jupe_gate\",\"y_airport\",\"lhz_airport\",\"airplane_01\",\"jupe_cave\",\"quiz_02\",\"hu_fild07\",\"hu_fild05\",\"hu_fild04\",\"hu_fild01\",\"yuno_fild06\",\"job_soul\",\"job_star\",\"que_job01\",\"que_job02\",\"que_job03\",\"abyss_01\",\"abyss_02\",\"abyss_03\",\"thana_step\",\"thana_boss\",\"tha_scene01\",\"tha_t01\",\"tha_t02\",\"tha_t03\",\"tha_t04\",\"tha_t07\",\"tha_t05\",\"tha_t06\",\"tha_t08\",\"tha_t09\",\"tha_t10\",\"tha_t11\",\"tha_t12\",\"auction_01\",\"auction_02\",\"hugel\",\"hu_in01\",\"que_bingo\",\"que_hugel\",\"p_track01\",\"p_track02\",\"odin_tem01\",\"odin_tem02\",\"odin_tem03\",\"hu_fild02\",\"hu_fild03\",\"hu_fild06\",\"ein_fild01\",\"ein_fild02\",\"ein_fild05\",\"yuno_fild10\",\"kh_kiehl02\",\"kh_kiehl01\",\"kh_dun02\",\"kh_dun01\",\"kh_mansion\",\"kh_rossi\",\"kh_school\",\"kh_vila\",\"force_map1\",\"force_map2\",\"force_map3\",\"job_hunter\",\"job_knight\",\"job_priest\",\"job_wizard\",\"ve_in02\",\"rachel\",\"ra_in01\",\"ra_fild01\",\"ra_fild02\",\"ra_fild03\",\"ra_fild04\",\"ra_fild05\",\"ra_fild06\",\"ra_fild07\",\"ra_fild08\",\"ra_fild09\",\"ra_fild10\",\"ra_fild11\",\"ra_fild12\",\"ra_fild13\",\"ra_san01\",\"ra_san02\",\"ra_san03\",\"ra_san04\",\"ra_san05\",\"ra_temin\",\"ra_temple\",\"ra_temsky\",\"que_rachel\",\"ice_dun01\",\"ice_dun02\",\"ice_dun03\",\"ice_dun04\",\"que_thor\",\"thor_camp\",\"thor_v01\",\"thor_v02\",\"thor_v03\",\"veins\",\"ve_in\",\"ve_fild01\",\"ve_fild02\",\"ve_fild03\",\"ve_fild04\",\"ve_fild05\",\"ve_fild06\",\"ve_fild07\",\"poring_c01\",\"poring_c02\",\"que_ng\",\"nameless_i\",\"nameless_n\",\"nameless_in\",\"abbey01\",\"abbey02\",\"abbey03\",\"poring_w01\",\"poring_w02\",\"que_san04\",\"moscovia\",\"mosk_in\",\"mosk_ship\",\"mosk_fild01\",\"mosk_fild02\",\"mosk_dun01\",\"mosk_dun02\",\"mosk_dun03\",\"mosk_que\",\"force_4-1\",\"force_5-1\",\"06guild_r\",\"06guild_01\",\"06guild_02\",\"06guild_03\",\"06guild_04\",\"06guild_05\",\"06guild_06\",\"06guild_07\",\"06guild_08\",\"z_agit\",\"que_temsky\",\"itemmall\",\"bossnia_01\",\"bossnia_02\",\"bossnia_03\",\"bossnia_04\",\"schg_cas01\",\"schg_cas02\",\"schg_cas03\",\"schg_cas04\",\"schg_cas05\",\"sch_gld\",\"cave\",\"moc_fild20\",\"moc_fild21\",\"moc_fild22\",\"que_ba\",\"que_moc_16\",\"que_moon\",\"arug_cas01\",\"arug_cas02\",\"arug_cas03\",\"arug_cas04\",\"arug_cas05\",\"aru_gld\",\"bat_room\",\"bat_a01\",\"bat_a02\",\"bat_b01\",\"bat_b02\",\"que_qsch01\",\"que_qsch02\",\"que_qsch03\",\"que_qsch04\",\"que_qsch05\",\"que_qaru01\",\"que_qaru02\",\"que_qaru03\",\"que_qaru04\",\"que_qaru05\",\"1@cata\",\"2@cata\",\"e_tower\",\"1@tower\",\"2@tower\",\"3@tower\",\"4@tower\",\"5@tower\",\"6@tower\",\"mid_camp\",\"mid_campin\",\"man_fild01\",\"man_fild03\",\"spl_fild02\",\"spl_fild03\",\"moc_fild22b\",\"que_dan01\",\"que_dan02\",\"schg_que01\",\"schg_dun01\",\"arug_que01\",\"arug_dun01\",\"1@orcs\",\"2@orcs\",\"1@nyd\",\"2@nyd\",\"nyd_dun01\",\"nyd_dun02\",\"manuk\",\"man_fild02\",\"man_in01\",\"splendide\",\"spl_fild01\",\"spl_in01\",\"spl_in02\",\"bat_c01\",\"bat_c02\",\"bat_c03\",\"moc_para01\",\"job3_arch01\",\"job3_arch02\",\"job3_arch03\",\"job3_guil01\",\"job3_guil02\",\"job3_guil03\",\"job3_rang01\",\"job3_rang02\",\"job3_rune01\",\"job3_rune02\",\"job3_rune03\",\"job3_war01\",\"job3_war02\",\"jupe_core2\",\"brasilis\",\"bra_in01\",\"bra_fild01\",\"bra_dun01\",\"bra_dun02\",\"dicastes01\",\"dicastes02\",\"dic_in01\",\"dic_fild01\",\"dic_fild02\",\"dic_dun01\",\"dic_dun02\",\"job3_gen01\",\"s_atelier\",\"job3_sha01\",\"\",\"evt_zombie\",\"evt_coke\",\"ac_sl_area\",\"ac_cl_hall\",\"ac_cl_room\",\"jp_s_dun11\",\"\",\"mora\",\"bif_fild01\",\"bif_fild02\",\"1@mist\",\"dewata\",\"dew_in01\",\"dew_fild01\",\"dew_dun01\",\"dew_dun02\",\"que_house_s\",\"malangdo\",\"mal_in01\",\"mal_in02\",\"mal_dun01\",\"1@pump\",\"2@pump\",\"1@cash\",\"iz_dun05\",\"evt_mobroom\",\"alde_tt03\",\"dic_dun03\",\"mjolnir_04_1\",\"evt_swar_b\",\"evt_swar_r\",\"evt_swar_s\",\"evt_swar_t\",\"1@lhz\",\"lhz_dun04\",\"que_lhz\",\"gld_dun01_2\",\"gld_dun02_2\",\"gld_dun03_2\",\"gld_dun04_2\",\"gld2_ald\",\"gld2_gef\",\"gld2_pay\",\"gld2_prt\",\"malaya\",\"ma_fild01\",\"ma_fild02\",\"ma_scene01\",\"ma_in01\",\"ma_dun01\",\"1@ma_h\",\"1@ma_c\",\"1@ma_b\",\"ma_zif01\",\"ma_zif02\",\"ma_zif03\",\"ma_zif04\",\"ma_zif05\",\"ma_zif06\",\"ma_zif07\",\"ma_zif08\",\"ma_zif09\",\"job_ko\",\"eclage\",\"ecl_fild01\",\"ecl_in01\",\"ecl_in02\",\"ecl_in03\",\"ecl_in04\",\"1@ecl\",\"ecl_tdun01\",\"ecl_tdun02\",\"ecl_tdun03\",\"ecl_tdun04\",\"ecl_hub01\",\"que_avan01\",\"moc_prydn1\",\"moc_prydn2\",\"iz_int\",\"iz_int01\",\"iz_int02\",\"iz_int03\",\"iz_int04\",\"iz_ac01\",\"iz_ac02\",\"iz_ng01\",\"treasure_n1\",\"treasure_n2\",\"iz_ac01_d\",\"iz_ac02_d\",\"iz_ac01_c\",\"iz_ac02_c\",\"iz_ac01_b\",\"iz_ac02_b\",\"iz_ac01_a\",\"iz_ac02_a\",\"izlude_d\",\"izlude_c\",\"izlude_b\",\"izlude_a\",\"prt_fild08d\",\"prt_fild08c\",\"prt_fild08b\",\"prt_fild08a\",\"te_prt_gld\",\"te_prtcas01\",\"te_prtcas02\",\"te_prtcas03\",\"te_prtcas04\",\"te_prtcas05\",\"teg_dun01\",\"teg_dun02\",\"te_alde_gld\",\"te_aldecas1\",\"te_aldecas2\",\"te_aldecas3\",\"te_aldecas4\",\"te_aldecas5\",\"1@gl_k\",\"2@gl_k\",\"gl_cas02_\",\"gl_chyard_\",\"silk_lair\",\"evt_bomb\",\"1@def01\",\"1@def02\",\"1@def03\",\"1@face\",\"1@sara\",\"dali\",\"dali02\",\"1@tnm1\",\"1@tnm2\",\"1@tnm3\",\"1@ge_st\",\"1@gef\",\"1@gef_in\",\"1@spa\",\"moro_vol\",\"moro_cav\",\"1@dth1\",\"1@dth2\",\"1@dth3\",\"1@rev\",\"1@xm_d\",\"1@eom\",\"1@jtb\",\"c_tower2_\",\"c_tower3_\"\n\n        ]\n}",
 			"file": "cronus.sublime-completions",
+			"file_size": 14883,
+			"file_write_time": 130825847042421169,
 			"settings":
 			{
-				"buffer_size": 12816,
+				"buffer_size": 14788,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "while.sublime-snippet",
+			"file": "for.sublime-snippet",
 			"settings":
 			{
-				"buffer_size": 233,
+				"buffer_size": 253,
 				"line_ending": "Windows"
 			}
 		},
@@ -103,7 +142,7 @@
 			"file": "cronus.YAML-tmLanguage",
 			"settings":
 			{
-				"buffer_size": 8656,
+				"buffer_size": 9442,
 				"line_ending": "Windows"
 			}
 		},
@@ -111,7 +150,7 @@
 			"file": "/C/Program Files (x86)/VertrigoServ/www/graph/index.php",
 			"settings":
 			{
-				"buffer_size": 5916,
+				"buffer_size": 6005,
 				"line_ending": "Windows"
 			}
 		},
@@ -140,10 +179,10 @@
 			}
 		},
 		{
-			"contents": "*mes \"<string>\"{,\"<string>\"...\"<string>\"};\n*next;\n*close;\n*close2;\n*end;\n*set <variable>,<expression>;\n*set(<variable>,<expression>)\n*setd \"<variable name>\",<value>;\n*getd(\"<variable name>\")\n*getvariableofnpc(<variable>,\"<npc name>\")\n*goto <label>;\n*menu \"<option_text>\",<target_label>{,\"<option_text>\",<target_label>,...};\n*select(\"<option>\"{,\"<option>\",...})\n*prompt(\"<option>\"{,\"<option>\",...})\n*input(<variable>{,<min>{,<max>}})\n*callfunc \"<function>\"{,<argument>,...<argument>};\n*callfunc(\"<function>\"{,<argument>,...<argument>})\n*callsub <label>{,<argument>,...<argument>};\n*callsub(<label>{,<argument>,...<argument>})\n*getarg(<index>{,<default_value>})\n*getargcount()\n*return {<value>};\n*function <function name>;\n*function <function name> {\n*is_function(\"<function name>\")\n*if (<condition>) <statement>;\n*while (<condition>) <statement>;\n*for (<variable initialization>; <condition>; <variable update>) <statement>;\n*do { <statement>; } while (<condition>);\n*freeloop(<toggle>)\n*setarray <array name>[<first value>],<value>{,<value>...<value>};\n*cleararray <array name>[<first value to alter>],<value>,<number of values to set>;\n*copyarray <destination array>[<first value>],<source array>[<first value>],<amount of data to copy>;\n*deletearray <array name>[<first value>],<how much to delete>;\n*strcharinfo(<type>)\n*strnpcinfo(<type>)\n*charid2rid(<char id>)\n*getarraysize(<array name>)\n*getelementofarray(<array name>,<index>)\n*readparam(<parameter number>)\n*getcharid(<type>{,\"<character name>\"})\n*getnpcid(<type>{,\"<npc name>\"});\n*getchildid()\n*getmotherid()\n*getfatherid()\n*ispartneron()\n*getpartnerid()\n*getpartyname(<party id>)\n*getpartymember <party id>{,<type>};\n*getpartyleader(<party id>{,<type>})\n*getlook(<type>)\n*getsavepoint(<information type>)\n*getcharip({\"<character name>\"|<account id>|<char id>})\n*sit({\"<character name>\"})\n*stand({\"<character name>\"})\n*issit({\"<character name>\"})\n*getequipid(<equipment slot>)\n*getequipname(<equipment slot>)\n*getitemname(<item id>)\n*getbrokenid(<number>)\n*getbrokencount()\n*getequipisequiped(<equipment slot>)\n*getequipisenableref(<equipment slot>)\n*getequiprefinerycnt(<equipment slot>)\n*getequipweaponlv(<equipment slot>)\n*getequippercentrefinery(<equipment slot>)\n*getareadropitem(\"<map name>\",<x1>,<y1>,<x2>,<y2>,<item>)\n*getequipcardcnt(<equipment slot>)\n*getinventorylist;\n*getcartinventorylist;\n*cardscnt()\n*getrefine()\n*getnameditem(<item id>,\"<name to inscribe>\");\n*getnameditem(\"<item name>\",\"<name to inscribe>\");\n*getitemslots(<item ID>)\n*getiteminfo(<item ID>,<type>)\n*getequipcardid(<equipment slot>,<card slot>)\n*getmapxy(\"<variable for map name>\",<variable for x>,<variable for y>,<type>{,\"<search string>\"})\n*getgmlevel()\n*getgroupid()\n*gettimetick(<tick type>)\n*gettime(<type>)\n*gettimestr(<format string>,<max length>)\n*getusers(<type>)\n*getmapusers(\"<map name>\")\n*getareausers({\"<map name>\",}{<x1>,<y1>,<x2>,<y2>})\n*getareausers({\"<map name>\",}{<radius>})\n*_in\" maps, due to all the shops and houses.\n*getusersname;\n*getguildname(<guild id>)\n*getguildmaster(<guild id>)\n*getguildmasterid(<guild id>)\n*getcastlename(\"<map name>\")\n*getcastledata(\"<map name>\",<type of data>)\n*setcastledata \"<map name>\",<type of data>,<value>;\n*getgdskilllv(<guild id>,<skill id>)\n*getgdskilllv(<guild id>,\"<skill name>\")\n*requestguildinfo <guild id>{,\"<event label>\"};\n*getmapguildusers(<mapname>,<guild id>)\n*getguildmember <guild id>{,<type>};\n*getskilllv(<skill id>)\n*getskilllv(\"<skill name>\")\n*getskilllist;\n*getpetinfo(<type>)\n*petstat(<flag>)\n*getmonsterinfo(<mob ID>,<type>)\n*addmonsterdrop(<mob id or name>, <item id>, <rate>)\n*delmonsterdrop(<mob id or name>, <item id>)\n*getmobdrops(<mob id>)\n*skillpointcount()\n*getscrate(<effect type>,<base rate>{,<GID>})\n*playerattached()\n*isloggedin(<account id>{,<char id>})\n*checkweight(<item id>,<amount>{,<item id>,<amount>,<item id>,<amount>,...});\n*checkweight(\"<item name>\",<amount>{,\"<item name>\",<amount>,\"<item name>\",<amount>,...});\n*checkweight2(<id_array>,<amount_array>);\n*basicskillcheck()\n*checkoption(<option number>)\n*checkoption1(<option number>)\n*checkoption2(<option number>)\n*setoption <option number>{,<flag>};\n*setcart {<type>};\n*checkcart()\n*setfalcon {<flag>};\n*checkfalcon()\n*setmount {<flag>};\n*checkmount()\n*setcashmount;\n*hascashmount()\n*checkwug()\n*checkvending({\"<Player Name>\"})\n*checkchatting({\"<Player Name>\"})\n*checkidle({\"<Player Name>\"})\n*agitcheck()\n*agitcheck2()\n*isnight()\n*checkre(<type>)\n*isequipped(<id>{,<id>{,<id>{,<id>}}})\n*isequippedcnt(<card id>{,<card id>{,<card id>{,<card id>}}})\n*checkequipedcard(<card id>)\n*getequipisidentify(<equipment slot>)\n*attachrid(<account ID>)\n*detachrid;\n*rid2name(<rid>)\n*message \"<character name>\",\"<message>\";\n*dispbottom \"<message>\";\n*showscript \"<message>\"{,<GID>};\n*warp \"<map name>\",<x>,<y>;\n*areawarp \"<from map name>\",<x1>,<y1>,<x2>,<y2>,\"<to map name>\",<x3>,<y3>{,<x4>,<y4>};\n*warpparty \"<to_mapname>\",<x>,<y>,<party_id>,{\"<from_mapname>\"};\n*warpchar \"<mapname>\",<x>,<y>,<char_id>;\n*warpguild \"<mapname>\",<x>,<y>,<guild_id>;\n*warppartner(\"<map name>\",<x>,<y>);\n*savepoint \"<map name>\",<x>,<y>;\n*heal <hp>,<sp>;\n*itemheal <hp>,<sp>;\n*2)/100]\n*2)/100]\n*percentheal <hp>,<sp>;\n*recovery;\n*jobchange <job number>{,<upper flag>};\n*jobname (<job number>)\n*eaclass ({<job number>})\n*roclass <job number> {,<gender>}\n*changebase <job ID number>;\n*classchange <view id>,<type>;\n*changesex;\n*getexp <base xp>,<job xp>;\n*setlook <look type>,<look value>;\n*changelook <look type>,<look value>;\n*pushpc <direction>,<cells>;\n*get_version()\n*montransform <monster id>,<duration>{,<sc_type>{,<val1>{,<val2>{,<val3>{,<val4>}}}}}; \n*montransform \"<monster name>\",<duration>{,<sc_type>{,<val1>{,<val2>{,<val3>{,<val4>}}}}}; \n*getitem <item id>,<amount>{,<account ID>};\n*getitem \"<item name>\",<amount>{,<account ID>};\n*getitem2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};\n*getitem2 \"<item name>\",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};\n*5)<<8);\n*getitembound <item id>,<amount>,<bound type>{,<account ID>};\n*getitembound \"<item name>\",<amount>,<bound type>{,<account ID>};\n*getitembound2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>,<bound type>;\n*getitembound2 \"<item name>\",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>,<bound type>;\n*countbound({<bound type>})\n*checkbound(<item_id>{,<bound_type>{,<refine>{,<attribute>{,<card_1>{,<card_2>{,<card_3>{,<card_4>}}}}}}});\n*getnameditem <item id>,<character name|character ID>;\n*getnameditem \"<item name>\",<character name|character ID>;\n*rentitem <item id>,<time>;\n*rentitem \"<item name>\",<time>;\n*makeitem <item id>,<amount>,\"<map name>\",<X>,<Y>;\n*makeitem \"<item name>\",<amount>,\"<map name>\",<X>,<Y>;\n*cleanarea \"<map name>\",<x1>,<y1>,<x2>,<y2>;\n*cleanmap \"<map name>\";\n*searchitem <array name>,\"<item name>\";\n*delitem <item id>,<amount>{,<account ID>};\n*delitem \"<item name>\",<amount>{,<account ID>};\n*delitem2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};\n*delitem2 \"<item name>\",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};\n*countitem(<item id>)\n*countitem(\"<item name>\")\n*countitem2(<item id>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>)\n*countitem2(\"<item name>\",<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>)\n*groupranditem <item_id/constant>;\n*getrandgroupitem <item_id/constant>,<quantity>;\n*packageitem\n*enable_items;\n*disable_items;\n*itemskill <skill id>,<skill level>,{flag};\n*itemskill \"<skill name>\",<skill level>,{flag};\n*itemeffect <item id>;\n*itemeffect \"<item name>\";\n*consumeitem is an alias of itemeffect (added for compatibility)\n*produce <item level>;\n*cooking <dish level>;\n*makerune <% success bonus>;\n*successremovecards <equipment slot>;\n*failedremovecards <equipment slot>,<type>;\n*repair <broken item number>;\n*repairall;\n*successrefitem <equipment slot>{,<upgrade_count>};\n*failedrefitem <equipment slot>;\n*downrefitem <equipment slot>{,<downgrade_count>};\n*unequip <equipment slot>;\n*clearitem;\n*equip <item id>;\n*equip2 <item id>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>;\n*autoequip <item id>,<option>;\n*buyingstore <slots>;\n*searchstores <uses>,<effect>;\n*delequip <equipment slot>;\n*openstorage;\n*openmail;\n*openauction;\n*guildopenstorage()\n*guildchangegm(<guild id>,<new master's name>)\n*guildgetexp <amount>;\n*guildskill <skill id>,<level>\n*guildskill \"<skill name>\",<level>\n*resetlvl <action type>;\n*resetstatus;\n*resetskill;\n*sc_start 	<effect type>,<ticks>,<value 1>{,<rate>,<flag>{,<GID>}};\n*sc_start2 	<effect type>,<ticks>,<value 1>,<value 2>{,<rate>,<flag>{,<GID>}};\n*sc_start4 	<effect type>,<ticks>,<value 1>,<value 2>,<value 3>,<value 4>{,<rate>,<flag>{,<GID>}};\n*sc_end 	<effect type>{,<GID>};\n*getstatus <effect type>{,<type>};\n*skilleffect <skill id>,<number>;\n*skilleffect \"<skill name>\",<number>;\n*npcskilleffect <skill id>,<number>,<x>,<y>;\n*npcskilleffect \"<skill name>\",<number>,<x>,<y>;\n*specialeffect <effect number>{,<send_target>{,\"<NPC Name>\"}};\n*specialeffect2 <effect number>{,<send_target>{,\"<Player Name>\"}};\n*statusup <stat>;\n*statusup2 <stat>,<amount>;\n*bonus <bonus type>,<val1>;\n*bonus2 <bonus type>,<val1>,<val2>;\n*bonus3 <bonus type>,<val1>,<val2>,<val3>;\n*bonus4 <bonus type>,<val1>,<val2>,<val3>,<val4>;\n*bonus5 <bonus type>,<val1>,<val2>,<val3>,<val4>,<val5>;\n*autobonus <bonus script>,<rate>,<duration>{,<flag>,{<other script>}};\n*autobonus2 <bonus script>,<rate>,<duration>{,<flag>,{<other script>}};\n*autobonus3 <bonus script>,<rate>,<duration>,<skill id>,{<other script>};\n*autobonus3 <bonus script>,<rate>,<duration>,\"<skill name>\",{<other script>};\n*skill <skill id>,<level>{,<flag>};\n*skill \"<skill name>\",<level>{,<flag>};\n*addtoskill <skill id>,<level>{,<flag>};\n*addtoskill \"<skill name>\",<level>{,<flag>};\n*nude;\n*disguise <Monster ID>;\n*undisguise;\n*marriage(\"<spouse name>\");\n*wedding;\n*divorce()\n*pcfollow <id>,<target id>;\n*pcstopfollow <id>;\n*pcblockmove <id>,<option>;\n*monster     \"<map name>\",<x>,<y>,\"<name to show>\",<mob id>,<amount>{,\"<event label>\"{,<size>{,<ai>}}};\n*areamonster \"<map name>\",<x1>,<y1>,<x2>,<y2>,\"<name to show>\",<mob id>,<amount>{,\"<event label>\"{,<size>{,<ai>}}};\n*areamobuseskill \"<map name>\",<x>,<y>,<range>,<mob id>,<skill id>,<skill level>,<cast time>,<cancelable>,<emotion>,<target type>;\n*areamobuseskill \"<map name>\",<x>,<y>,<range>,<mob id>,\"<skill name>\",<skill level>,<cast time>,<cancelable>,<emotion>,<target type>;\n*killmonster \"<map name>\",\"<event label>\"{,<type>};\n*killmonsterall \"<map name>\"{,<type>};\n*strmobinfo(<type>,<monster id>);\n*mobcount(\"<map name>\",\"<event label>\")\n*clone \"<map name>\",<x>,<y>,\"<event>\",<char id>{,<master_id>{,<mode>{,<flag>,<duration>}}}\n*summon \"Monster name\",<monster id>{,<Time Out>{,\"event label\"}};\n*homevolution;\n*gethominfo(<type>)\n*morphembryo;\n*hommutate {<ID>};\n*checkhomcall()\n*unitwalk <GID>,<x>,<y>;\n*unitwalk <GID>,<target_GID>;\n*unitkill <GID>;\n*unitwarp <GID>,<Mapname>,<x>,<y>;\n*unitattack <GID>,<Target ID>;\n*unitstop <GID>;\n*unittalk <GID>,<Text>;\n*unitemote <GID>,<Emote>;\n*disablenpc \"<NPC object name>\";\n*enablenpc \"<NPC object name>\";\n*hideonnpc \"<NPC object name>\";\n*hideoffnpc \"<NPC object name>\";\n*doevent \"<NPC object name>::<event label>\";\n*donpcevent \"<NPC object name>::<event label>\";\n*npctalk \"<message>\";\n*setnpcdisplay(\"<npc name>\", \"<display name>\", <class id>, <size>)\n*setnpcdisplay(\"<npc name>\", \"<display name>\", <class id>)\n*setnpcdisplay(\"<npc name>\", \"<display name>\")\n*setnpcdisplay(\"<npc name>\", <class id>)\n*addtimer <ticks>,\"NPC::OnLabel\";\n*deltimer \"NPC::OnLabel\";\n*addtimercount \"NPC::OnLabel\",<ticks>;\n*initnpctimer	{ \"<NPC name>\" {, <Attach Flag>} } |\n*stopnpctimer	{ \"<NPC name>\" {, <Detach Flag>}  } |\n*startnpctimer	{ \"<NPC name>\" {, <Attach Flag>} } |\n*setnpctimer	<tick>{,\"<NPC name>\"};\n*getnpctimer	(<type of information>{,\"<NPC name>\"})\n*attachnpctimer	{\"<character name>\"};\n*detachnpctimer	{\"<NPC name>\"};\n*sleep {<milliseconds>};\n*sleep2 {<milliseconds>};\n*awake \"<NPC name>\";\n*progressbar \"<color>\",<seconds>;\n*announce \"<text>\",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}};\n*mapannounce \"<map name>\",\"<text>\",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}}};\n*areaannounce \"<map name>\",<x1>,<y1>,<x2>,<y2>,\"<text>\",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}}};\n*callshop \"<name>\",<option>;\n*npcshopitem \"<name>\",<item id>,<price>{,<item id>,<price>{,<item id>,<price>{,...}}}\n*npcshopadditem \"<name>\",<item id>,<price>{,<item id>,<price>{,<item id>,<price>{,...}}}\n*npcshopdelitem \"<name>\",<item id>{,<item id>{,<item id>{,...}}}\n*npcshopattach \"<name>\"{,<flag>}\n*waitingroom \"<chatroom name>\",<limit>{,<event label>,<trigger>,<required zeny>,<min lvl>,<max lvl>};\n*delwaitingroom {\"<NPC object name\"};\n*enablewaitingroomevent {\"<NPC object name>\"};\n*disablewaitingroomevent {\"<NPC object name>\"};\n*getwaitingroomstate(<information type>{,\"<NPC object name>\"})\n*warpwaitingpc \"<map name>\",<x>,<y>{,<number of people>};\n*kickwaitingroomall {\"<NPC object name>\"};\n*setmapflagnosave \"<map name>\",\"<alternate map name>\",<x>,<y>;\n*setmapflag \"<map name>\",<flag>{,<val>};\n*removemapflag \"<map name>\",<flag>;\n*getmapflag(\"<map name>\",<flag>)\n*setbattleflag \"<battle flag>\",<value>;\n*getbattleflag(\"<battle flag>\")\n*warpportal <x>,<y>,\"<mapname>\",<x>,<y>;\n*mapwarp \"<from map>\",\"<to map>\",<x>,<y>{,<type>,<ID>};\n*maprespawnguildid \"<map name>\",<guild id>,<flag>;\n*agitstart;\n*agitend;\n*agitstart2;\n*agitend2;\n*gvgon \"<map name>\";\n*gvgoff \"<map name>\";\n*flagemblem <guild id>;\n*guardian \"<map name>\",<x>,<y>,\"<name to show>\",<mob id>{,\"<event label>\"{,<guardian index>}};\n*guardianinfo(\"<map name>\", <guardian number>, <type>);\n*npcspeed <speed value>;\n*npcwalkto <x>,<y>;\n*npcstop;\n*movenpc \"<NPC name>\",<x>,<y>{,<dir>};\n*debugmes \"<message>\";\n*logmes \"<message>\";\n*globalmes \"<message>\"{,\"<NPC name>\"};\n*channelmes(\"<#channel>\", \"<message>\");\n*rand(<number>{,<number>});\n*viewpoint <action>,<x>,<y>,<point number>,<color>;\n*cutin \"<filename>\",<position>;\n*pet <pet id>;\n*emotion <emotion number>{,<target>{,\"<target name>\"}};\n*misceffect <effect number>;\n*soundeffect \"<effect filename>\",<type>;\n*soundeffectall \"<effect filename>\",<type>{,\"<map name>\"}{,<x0>,<y0>,<x1>,<y1>};\n*playbgm \"<BGM filename>\";\n*playbgmall \"<BGM filename>\"{,\"<map name>\"{,<x0>,<y0>,<x1>,<y1>}};\n*pvpon \"<map name>\";\n*pvpoff \"<map name>\";\n*atcommand \"<command>\";\n*charcommand \"<command>\";\n*bindatcmd \"command\",\"<NPC object name>::<event label>\"{,<group level>,<group level char>,<log>};\n*unbindatcmd \"command\";\n*useatcmd \"command\";\n*unitskilluseid <GID>,<skill id>,<skill lvl>{,<target id>};\n*unitskilluseid <GID>,\"<skill name>\",<skill lvl>{,<target id>};\n*unitskillusepos <GID>,<skill id>,<skill lvl>,<x>,<y>;\n*unitskillusepos <GID>,\"<skill name>\",<skill lvl>,<x>,<y>;\n*npcskill <skill id>,<skill lvl>,<stat point>,<NPC level>;\n*npcskill \"<skill name>\",<skill lvl>,<stat point>,<NPC level>;\n*setnpcdistance <distance>\n*getnpcdir {<name>};\n*setnpcdir {<name>,} <direction>;\n*getnpcclass {<name>};\n*day;\n*night;\n*pcre_match(\"<string>\",\"<regex>\");\n*defpattern <set number>,\"<regular expression pattern>\",\"<event label>\";\n*activatepset <set number>;\n*deactivatepset <set number>;\n*deletepset <set number>;\n*pow(<number>,<power>)\n*log10(<number>)\n*sqrt(<number>)\n*distance(<x0>,<y0>,<x1>,<y1>)\n*min(<number>{,<number>...<number>})\n*max(<number>{,<number>...<number>})\n*md5(\"<string>\")\n*query_sql(\"your MySQL query\"{, <array variable>{, <array variable>{, ...}}});\n*query_logsql(\"your MySQL query\"{, <array variable>{, <array variable>{, ...}}});\n*escape_sql(<value>)\n*setiteminfo(<item id>,<type>,<value>)\n*setitemscript(<item id>,<\"{ new item script }\">{,<type>});\n*atoi(\"<string>\")\n*axtoi(\"<string>\")\n*strtol(\"string\", base)\n*compare(\"<string>\",\"<substring>\")\n*strcmp(\"<string>\",\"<string>\")\n*getstrlen(\"<string>\")\n*charisalpha(\"<string>\",<position>)\n*charat(<string>,<index>)\n*setchar(<string>,<char>,<index>)\n*insertchar(<string>,<char>,<index>)\n*delchar(<string>,<index>)\n*strtoupper(<string>)\n*strtolower(<string>)\n*charisupper(<string>,<index>)\n*charislower(<string>,<index>)\n*substr(<string>,<start_index>,<end_index>)\n*explode(<dest_array>,<string>,<delimiter>)\n*implode(<string_array>{,<glue>})\n*sprintf(<format>{,param{,param{,...}}})\n*sscanf(<string>,<format>{,param{,param{,...}}})\n*strpos(<haystack>,<needle>{,<offset>})\n*replacestr(<input>, <search>, <replace>{, <usecase>{, <count>}})\n*countstr(<input>, <search>{, <usecase>})\n*setfont <font>;\n*showdigit <value>{,<type>};\n*petskillbonus <bonus type>,<value>,<duration>,<delay>;\n*petrecovery <status type>,<delay>;\n*petloot <max items>;\n*petskillsupport <skill id>,<skill level>,<delay>,<percent hp>,<percent sp>;\n*petskillsupport \"<skill name>\",<skill level>,<delay>,<percent hp>,<percent sp>;\n*petskillattack <skill id>,<damage>,<number of attacks>,<rate>,<bonusrate>;\n*petskillattack \"<skill name>\",<damage>,<number of attacks>,<rate>,<bonusrate>;\n*bpet;\n*makepet <pet id>;\n*homshuffle;\n*setcell \"<map name>\",<x1>,<y1>,<x2>,<y2>,<type>,<flag>;\n*checkcell (\"<map name>\",<x>,<y>,<type>);\n*setwall \"<map name>\",<x>,<y>,<size>,<dir>,<shootable>,\"<name>\";\n*delwall \"<name>\";\n*readbook <book id>,<page>;\n*instance_create(\"<instance name>\",<owner id>{,<optional owner_type>});\n*instance_destroy {<instance id>};\n*instance_attachmap(\"<map name>\",<instance id>{,<use base name>{,\"<new map name>\"}});\n*instance_detachmap \"<map name>\"{,<instance id>};\n*instance_init <instance id>;\n*instance_announce <instance id>,\"<text>\",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}};\n*instance_attach <instance id>;\n*instance_npcname(\"<npc name>\"{,<instance id>});\n*has_instance(\"<map name>\"{,<instance id>});\n*has_instance2(\"<map name>\");\n*instance_id();\n*instance_warpall \"<map name>\",<x>,<y>{,<instance id>};\n*instance_set_timeout <alive timeout>,<idle timeout>{,<instance id>};\n*instance_check_party(<party id>{,<amount>{,<min>{,<max>}}});\n*instance_check_guild(<guild_id>{,<amount>{,<min>{,<max>}}});\n*instance_set_respawn(<map_name>,<x>,<y>{,<instance_id>});\n*instance_mapname(\"<map name>\"{,<instance id>})\n*questinfo <Quest ID>, <Icon> {, <Map Mark Color>{, <Job Class>}};\n*setquest <ID>;\n*questinfo is set, and the same ID is specified here, the icon will be cleared when the quest is set.\n*completequest <ID>{,<ID2>};\n*erasequest <ID>{,<ID2>};\n*changequest <ID>,<ID2>;\n*questprogress(<ID>{,PLAYTIME|HUNTING})\n*questactive(<ID>)\n*showevent <icon>{,<mark color>}\n*waitingroom2bg_single(<battle group>,\"<mapname>\",<x>,<y>,\"<npc name>\");\n*waitingroom2bg(\"<mapname>\",<x>,<y>,\"<On Quit Event>\",\"<On Death Event>\"{,\"<npc name>\"});\n*bg_team_setxy <Battle Group ID>,<x>,<y>;\n*bg_warp <Battle Group>,\"<Mapname>\",<x>,<y>;\n*bg_monster <Battle Group>,\"<map name>\",<x>,<y>,\"<name to show>\",<mob id>,\"<event label>\";\n*bg_monster(<Battle Group>,\"<map name>\",<x>,<y>,\"<name to show>\",<mob id>,\"<event label>\");\n*bg_monster_set_team <GID>,<Battle Group>;\n*bg_leave;\n*bg_destroy <Batte Group>;\n*areapercentheal \"<mapname>\",<x1>,<y1>,<x2>,<y2>,<hp>,<sp>;\n*bg_get_data(<Battle Group>,<type>);\n*bg_getareausers(<battle group>,<map name>,<x0>,<y0>,<x1>,<y1>);\n*bg_updatescore \"<mapname>\",<Guillaume Score>,<Croix Score>;\n*mercenary_create <class>,<contract time>;\n*mercenary_heal <hp>,<sp>;\n*mercenary_sc_start <type>,<tick>,<val1>;\n*mercenary_get_calls(<guild>);\n*mercenary_set_calls <guild>,<value>;\n*mercenary_get_faith(<guild>);\n*mercenary_set_faith <guild>,<value>;\n*getmercinfo(<type>{,<char id>});\n*queue();\n*queuesize(<queue_id>);\n*queueadd(<queue_id>,<var_id>);\n*queueremove(<queue_id>,<var_id>);\n*queueopt(<queue_id>,<optionType>,{Optional <option val>});\n*queuedel(<queue_id>);\n*queueiterator(<queue_id>);\n*qicheck(<queue_iterator_id>);\n*qiget(<queue_iterator_id>);\n*qiclear(<queue_iterator_id>);\n*openshop({NPC_Name});\n*sellitem <Item_ID>{,<price>{,<qty>}};\n*stopselling <Item_ID>;\n*setcurrency <Val1>{,<Val2>};\n*Cash* Points field\n*tradertype(<Type>);\n*purchaseok();\n*shopcount(<Item_ID>);",
+			"contents": "*mes \"<string>\"{,\"<string>\"...\"<string>\"};\n*next;\n*close;\n*close2;\n*end;\n*set <variable>,<expression>;\n*set(<variable>,<expression>)\n*setd \"<variable name>\",<value>;\n*getd(\"<variable name>\")\n*getvariableofnpc(<variable>,\"<npc name>\")\n*goto <label>;\n*menu \"<option_text>\",<target_label>{,\"<option_text>\",<target_label>,...};\n*select(\"<option>\"{,\"<option>\",...})\n*prompt(\"<option>\"{,\"<option>\",...})\n*input(<variable>{,<min>{,<max>}})\n*callfunc \"<function>\"{,<argument>,...<argument>};\n*callfunc(\"<function>\"{,<argument>,...<argument>})\n*callsub <label>{,<argument>,...<argument>};\n*callsub(<label>{,<argument>,...<argument>})\n*getarg(<index>{,<default_value>})\n*getargcount()\n*return {<value>};\n*function <function name>;\n*function <function name> {\n*is_function(\"<function name>\")\n*if (<condition>) <statement>;\n*while (<condition>) <statement>;\n*for (<variable initialization>; <condition>; <variable update>) <statement>;\n*do { <statement>; } while (<condition>);\n*freeloop(<toggle>)\n\n*setarray <array name>[<first value>],<value>{,<value>...<value>};\n*cleararray <array name>[<first value to alter>],<value>,<number of values to set>;\n*copyarray <destination array>[<first value>],<source array>[<first value>],<amount of data to copy>;\n*deletearray <array name>[<first value>],<how much to delete>;\n*strcharinfo(<type>)\n*strnpcinfo(<type>)\n*charid2rid(<char id>)\n*getarraysize(<array name>)\n*getelementofarray(<array name>,<index>)\n*readparam(<parameter number>)\n*getcharid(<type>{,\"<character name>\"})\n*getnpcid(<type>{,\"<npc name>\"});\n*getchildid()\n*getmotherid()\n*getfatherid()\n*ispartneron()\n*getpartnerid()\n*getpartyname(<party id>)\n*getpartymember <party id>{,<type>};\n*getpartyleader(<party id>{,<type>})\n*getlook(<type>)\n*getsavepoint(<information type>)\n*getcharip({\"<character name>\"|<account id>|<char id>})\n*sit({\"<character name>\"})\n*stand({\"<character name>\"})\n*issit({\"<character name>\"})\n*getequipid(<equipment slot>)\n*getequipname(<equipment slot>)\n*getitemname(<item id>)\n*getbrokenid(<number>)\n*getbrokencount()\n*getequipisequiped(<equipment slot>)\n*getequipisenableref(<equipment slot>)\n*getequiprefinerycnt(<equipment slot>)\n*getequipweaponlv(<equipment slot>)\n*getequippercentrefinery(<equipment slot>)\n*getareadropitem(\"<map name>\",<x1>,<y1>,<x2>,<y2>,<item>)\n*getequipcardcnt(<equipment slot>)\n*getinventorylist;\n*getcartinventorylist;\n*cardscnt()\n*getrefine()\n*getnameditem(<item id>,\"<name to inscribe>\");\n*getnameditem(\"<item name>\",\"<name to inscribe>\");\n*getitemslots(<item ID>)\n*getiteminfo(<item ID>,<type>)\n*getequipcardid(<equipment slot>,<card slot>)\n*getmapxy(\"<variable for map name>\",<variable for x>,<variable for y>,<type>{,\"<search string>\"})\n*getgmlevel()\n*getgroupid()\n*gettimetick(<tick type>)\n*gettime(<type>)\n*gettimestr(<format string>,<max length>)\n*getusers(<type>)\n*getmapusers(\"<map name>\")\n*getareausers({\"<map name>\",}{<x1>,<y1>,<x2>,<y2>})\n*getareausers({\"<map name>\",}{<radius>})\n*_in\" maps, due to all the shops and houses.\n*getusersname;\n*getguildname(<guild id>)\n*getguildmaster(<guild id>)\n*getguildmasterid(<guild id>)\n*getcastlename(\"<map name>\")\n*getcastledata(\"<map name>\",<type of data>)\n*setcastledata \"<map name>\",<type of data>,<value>;\n*getgdskilllv(<guild id>,<skill id>)\n*getgdskilllv(<guild id>,\"<skill name>\")\n*requestguildinfo <guild id>{,\"<event label>\"};\n*getmapguildusers(<mapname>,<guild id>)\n*getguildmember <guild id>{,<type>};\n*getskilllv(<skill id>)\n*getskilllv(\"<skill name>\")\n*getskilllist;\n*getpetinfo(<type>)\n*petstat(<flag>)\n*getmonsterinfo(<mob ID>,<type>)\n*addmonsterdrop(<mob id or name>, <item id>, <rate>)\n*delmonsterdrop(<mob id or name>, <item id>)\n*getmobdrops(<mob id>)\n*skillpointcount()\n*getscrate(<effect type>,<base rate>{,<GID>})\n*playerattached()\n*isloggedin(<account id>{,<char id>})\n*checkweight(<item id>,<amount>{,<item id>,<amount>,<item id>,<amount>,...});\n*checkweight(\"<item name>\",<amount>{,\"<item name>\",<amount>,\"<item name>\",<amount>,...});\n*checkweight2(<id_array>,<amount_array>);\n*basicskillcheck()\n*checkoption(<option number>)\n*checkoption1(<option number>)\n*checkoption2(<option number>)\n*setoption <option number>{,<flag>};\n*setcart {<type>};\n*checkcart()\n*setfalcon {<flag>};\n*checkfalcon()\n*setmount {<flag>};\n*checkmount()\n*setcashmount;\n*hascashmount()\n*checkwug()\n*checkvending({\"<Player Name>\"})\n*checkchatting({\"<Player Name>\"})\n*checkidle({\"<Player Name>\"})\n*agitcheck()\n*agitcheck2()\n*isnight()\n*checkre(<type>)\n*isequipped(<id>{,<id>{,<id>{,<id>}}})\n*isequippedcnt(<card id>{,<card id>{,<card id>{,<card id>}}})\n*checkequipedcard(<card id>)\n*getequipisidentify(<equipment slot>)\n*attachrid(<account ID>)\n*detachrid;\n*rid2name(<rid>)\n*message \"<character name>\",\"<message>\";\n*dispbottom \"<message>\";\n*showscript \"<message>\"{,<GID>};\n*warp \"<map name>\",<x>,<y>;\n*areawarp \"<from map name>\",<x1>,<y1>,<x2>,<y2>,\"<to map name>\",<x3>,<y3>{,<x4>,<y4>};\n*warpparty \"<to_mapname>\",<x>,<y>,<party_id>,{\"<from_mapname>\"};\n*warpchar \"<mapname>\",<x>,<y>,<char_id>;\n*warpguild \"<mapname>\",<x>,<y>,<guild_id>;\n*warppartner(\"<map name>\",<x>,<y>);\n*savepoint \"<map name>\",<x>,<y>;\n*heal <hp>,<sp>;\n*itemheal <hp>,<sp>;\n*2)/100]\n*2)/100]\n*percentheal <hp>,<sp>;\n*recovery;\n*jobchange <job number>{,<upper flag>};\n*jobname (<job number>)\n*eaclass ({<job number>})\n*roclass <job number> {,<gender>}\n*changebase <job ID number>;\n*classchange <view id>,<type>;\n*changesex;\n*getexp <base xp>,<job xp>;\n*setlook <look type>,<look value>;\n*changelook <look type>,<look value>;\n*pushpc <direction>,<cells>;\n*get_version()\n*montransform <monster id>,<duration>{,<sc_type>{,<val1>{,<val2>{,<val3>{,<val4>}}}}}; \n*montransform \"<monster name>\",<duration>{,<sc_type>{,<val1>{,<val2>{,<val3>{,<val4>}}}}}; \n*getitem <item id>,<amount>{,<account ID>};\n*getitem \"<item name>\",<amount>{,<account ID>};\n*getitem2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};\n*getitem2 \"<item name>\",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};\n*5)<<8);\n*getitembound <item id>,<amount>,<bound type>{,<account ID>};\n*getitembound \"<item name>\",<amount>,<bound type>{,<account ID>};\n*getitembound2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>,<bound type>;\n*getitembound2 \"<item name>\",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>,<bound type>;\n*countbound({<bound type>})\n*checkbound(<item_id>{,<bound_type>{,<refine>{,<attribute>{,<card_1>{,<card_2>{,<card_3>{,<card_4>}}}}}}});\n*getnameditem <item id>,<character name|character ID>;\n*getnameditem \"<item name>\",<character name|character ID>;\n*rentitem <item id>,<time>;\n*rentitem \"<item name>\",<time>;\n*makeitem <item id>,<amount>,\"<map name>\",<X>,<Y>;\n*makeitem \"<item name>\",<amount>,\"<map name>\",<X>,<Y>;\n*cleanarea \"<map name>\",<x1>,<y1>,<x2>,<y2>;\n*cleanmap \"<map name>\";\n*searchitem <array name>,\"<item name>\";\n*delitem <item id>,<amount>{,<account ID>};\n*delitem \"<item name>\",<amount>{,<account ID>};\n*delitem2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};\n*delitem2 \"<item name>\",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};\n*countitem(<item id>)\n*countitem(\"<item name>\")\n*countitem2(<item id>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>)\n*countitem2(\"<item name>\",<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>)\n*groupranditem <item_id/constant>;\n*getrandgroupitem <item_id/constant>,<quantity>;\n*packageitem\n*enable_items;\n*disable_items;\n*itemskill <skill id>,<skill level>,{flag};\n*itemskill \"<skill name>\",<skill level>,{flag};\n*itemeffect <item id>;\n*itemeffect \"<item name>\";\n*consumeitem is an alias of itemeffect (added for compatibility)\n*produce <item level>;\n*cooking <dish level>;\n*makerune <% success bonus>;\n*successremovecards <equipment slot>;\n*failedremovecards <equipment slot>,<type>;\n*repair <broken item number>;\n*repairall;\n*successrefitem <equipment slot>{,<upgrade_count>};\n*failedrefitem <equipment slot>;\n*downrefitem <equipment slot>{,<downgrade_count>};\n*unequip <equipment slot>;\n*clearitem;\n*equip <item id>;\n*equip2 <item id>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>;\n*autoequip <item id>,<option>;\n*buyingstore <slots>;\n*searchstores <uses>,<effect>;\n*delequip <equipment slot>;\n*openstorage;\n*openmail;\n*openauction;\n*guildopenstorage()\n*guildchangegm(<guild id>,<new master's name>)\n*guildgetexp <amount>;\n*guildskill <skill id>,<level>\n*guildskill \"<skill name>\",<level>\n*resetlvl <action type>;\n*resetstatus;\n*resetskill;\n*sc_start 	<effect type>,<ticks>,<value 1>{,<rate>,<flag>{,<GID>}};\n*sc_start2 	<effect type>,<ticks>,<value 1>,<value 2>{,<rate>,<flag>{,<GID>}};\n*sc_start4 	<effect type>,<ticks>,<value 1>,<value 2>,<value 3>,<value 4>{,<rate>,<flag>{,<GID>}};\n*sc_end 	<effect type>{,<GID>};\n*getstatus <effect type>{,<type>};\n*skilleffect <skill id>,<number>;\n*skilleffect \"<skill name>\",<number>;\n*npcskilleffect <skill id>,<number>,<x>,<y>;\n*npcskilleffect \"<skill name>\",<number>,<x>,<y>;\n*specialeffect <effect number>{,<send_target>{,\"<NPC Name>\"}};\n*specialeffect2 <effect number>{,<send_target>{,\"<Player Name>\"}};\n*statusup <stat>;\n*statusup2 <stat>,<amount>;\n*bonus <bonus type>,<val1>;\n*bonus2 <bonus type>,<val1>,<val2>;\n*bonus3 <bonus type>,<val1>,<val2>,<val3>;\n*bonus4 <bonus type>,<val1>,<val2>,<val3>,<val4>;\n*bonus5 <bonus type>,<val1>,<val2>,<val3>,<val4>,<val5>;\n*autobonus <bonus script>,<rate>,<duration>{,<flag>,{<other script>}};\n*autobonus2 <bonus script>,<rate>,<duration>{,<flag>,{<other script>}};\n*autobonus3 <bonus script>,<rate>,<duration>,<skill id>,{<other script>};\n*autobonus3 <bonus script>,<rate>,<duration>,\"<skill name>\",{<other script>};\n*skill <skill id>,<level>{,<flag>};\n*skill \"<skill name>\",<level>{,<flag>};\n*addtoskill <skill id>,<level>{,<flag>};\n*addtoskill \"<skill name>\",<level>{,<flag>};\n*nude;\n*disguise <Monster ID>;\n*undisguise;\n*marriage(\"<spouse name>\");\n*wedding;\n*divorce()\n*pcfollow <id>,<target id>;\n*pcstopfollow <id>;\n*pcblockmove <id>,<option>;\n*monster     \"<map name>\",<x>,<y>,\"<name to show>\",<mob id>,<amount>{,\"<event label>\"{,<size>{,<ai>}}};\n*areamonster \"<map name>\",<x1>,<y1>,<x2>,<y2>,\"<name to show>\",<mob id>,<amount>{,\"<event label>\"{,<size>{,<ai>}}};\n*areamobuseskill \"<map name>\",<x>,<y>,<range>,<mob id>,<skill id>,<skill level>,<cast time>,<cancelable>,<emotion>,<target type>;\n*areamobuseskill \"<map name>\",<x>,<y>,<range>,<mob id>,\"<skill name>\",<skill level>,<cast time>,<cancelable>,<emotion>,<target type>;\n*killmonster \"<map name>\",\"<event label>\"{,<type>};\n*killmonsterall \"<map name>\"{,<type>};\n*strmobinfo(<type>,<monster id>);\n*mobcount(\"<map name>\",\"<event label>\")\n*clone \"<map name>\",<x>,<y>,\"<event>\",<char id>{,<master_id>{,<mode>{,<flag>,<duration>}}}\n*summon \"Monster name\",<monster id>{,<Time Out>{,\"event label\"}};\n*homevolution;\n*gethominfo(<type>)\n*morphembryo;\n*hommutate {<ID>};\n*checkhomcall()\n*unitwalk <GID>,<x>,<y>;\n*unitwalk <GID>,<target_GID>;\n*unitkill <GID>;\n*unitwarp <GID>,<Mapname>,<x>,<y>;\n*unitattack <GID>,<Target ID>;\n*unitstop <GID>;\n*unittalk <GID>,<Text>;\n*unitemote <GID>,<Emote>;\n*disablenpc \"<NPC object name>\";\n*enablenpc \"<NPC object name>\";\n*hideonnpc \"<NPC object name>\";\n*hideoffnpc \"<NPC object name>\";\n*doevent \"<NPC object name>::<event label>\";\n*donpcevent \"<NPC object name>::<event label>\";\n*npctalk \"<message>\";\n*setnpcdisplay(\"<npc name>\", \"<display name>\", <class id>, <size>)\n*setnpcdisplay(\"<npc name>\", \"<display name>\", <class id>)\n*setnpcdisplay(\"<npc name>\", \"<display name>\")\n*setnpcdisplay(\"<npc name>\", <class id>)\n*addtimer <ticks>,\"NPC::OnLabel\";\n*deltimer \"NPC::OnLabel\";\n*addtimercount \"NPC::OnLabel\",<ticks>;\n*initnpctimer	{ \"<NPC name>\" {, <Attach Flag>} } |\n*stopnpctimer	{ \"<NPC name>\" {, <Detach Flag>}  } |\n*startnpctimer	{ \"<NPC name>\" {, <Attach Flag>} } |\n*setnpctimer	<tick>{,\"<NPC name>\"};\n*getnpctimer	(<type of information>{,\"<NPC name>\"})\n*attachnpctimer	{\"<character name>\"};\n*detachnpctimer	{\"<NPC name>\"};\n*sleep {<milliseconds>};\n*sleep2 {<milliseconds>};\n*awake \"<NPC name>\";\n*progressbar \"<color>\",<seconds>;\n*announce \"<text>\",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}};\n*mapannounce \"<map name>\",\"<text>\",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}}};\n*areaannounce \"<map name>\",<x1>,<y1>,<x2>,<y2>,\"<text>\",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}}};\n*callshop \"<name>\",<option>;\n*npcshopitem \"<name>\",<item id>,<price>{,<item id>,<price>{,<item id>,<price>{,...}}}\n*npcshopadditem \"<name>\",<item id>,<price>{,<item id>,<price>{,<item id>,<price>{,...}}}\n*npcshopdelitem \"<name>\",<item id>{,<item id>{,<item id>{,...}}}\n*npcshopattach \"<name>\"{,<flag>}\n*waitingroom \"<chatroom name>\",<limit>{,<event label>,<trigger>,<required zeny>,<min lvl>,<max lvl>};\n*delwaitingroom {\"<NPC object name\"};\n*enablewaitingroomevent {\"<NPC object name>\"};\n*disablewaitingroomevent {\"<NPC object name>\"};\n*getwaitingroomstate(<information type>{,\"<NPC object name>\"})\n*warpwaitingpc \"<map name>\",<x>,<y>{,<number of people>};\n*kickwaitingroomall {\"<NPC object name>\"};\n*setmapflagnosave \"<map name>\",\"<alternate map name>\",<x>,<y>;\n*setmapflag \"<map name>\",<flag>{,<val>};\n*removemapflag \"<map name>\",<flag>;\n*getmapflag(\"<map name>\",<flag>)\n*setbattleflag \"<battle flag>\",<value>;\n*getbattleflag(\"<battle flag>\")\n*warpportal <x>,<y>,\"<mapname>\",<x>,<y>;\n*mapwarp \"<from map>\",\"<to map>\",<x>,<y>{,<type>,<ID>};\n*maprespawnguildid \"<map name>\",<guild id>,<flag>;\n*agitstart;\n*agitend;\n*agitstart2;\n*agitend2;\n*gvgon \"<map name>\";\n*gvgoff \"<map name>\";\n*flagemblem <guild id>;\n*guardian \"<map name>\",<x>,<y>,\"<name to show>\",<mob id>{,\"<event label>\"{,<guardian index>}};\n*guardianinfo(\"<map name>\", <guardian number>, <type>);\n*npcspeed <speed value>;\n*npcwalkto <x>,<y>;\n*npcstop;\n*movenpc \"<NPC name>\",<x>,<y>{,<dir>};\n*debugmes \"<message>\";\n*logmes \"<message>\";\n*globalmes \"<message>\"{,\"<NPC name>\"};\n*channelmes(\"<#channel>\", \"<message>\");\n*rand(<number>{,<number>});\n*viewpoint <action>,<x>,<y>,<point number>,<color>;\n*cutin \"<filename>\",<position>;\n*pet <pet id>;\n*emotion <emotion number>{,<target>{,\"<target name>\"}};\n*misceffect <effect number>;\n*soundeffect \"<effect filename>\",<type>;\n*soundeffectall \"<effect filename>\",<type>{,\"<map name>\"}{,<x0>,<y0>,<x1>,<y1>};\n*playbgm \"<BGM filename>\";\n*playbgmall \"<BGM filename>\"{,\"<map name>\"{,<x0>,<y0>,<x1>,<y1>}};\n*pvpon \"<map name>\";\n*pvpoff \"<map name>\";\n*atcommand \"<command>\";\n*charcommand \"<command>\";\n*bindatcmd \"command\",\"<NPC object name>::<event label>\"{,<group level>,<group level char>,<log>};\n*unbindatcmd \"command\";\n*useatcmd \"command\";\n*unitskilluseid <GID>,<skill id>,<skill lvl>{,<target id>};\n*unitskilluseid <GID>,\"<skill name>\",<skill lvl>{,<target id>};\n*unitskillusepos <GID>,<skill id>,<skill lvl>,<x>,<y>;\n*unitskillusepos <GID>,\"<skill name>\",<skill lvl>,<x>,<y>;\n*npcskill <skill id>,<skill lvl>,<stat point>,<NPC level>;\n*npcskill \"<skill name>\",<skill lvl>,<stat point>,<NPC level>;\n*setnpcdistance <distance>\n*getnpcdir {<name>};\n*setnpcdir {<name>,} <direction>;\n*getnpcclass {<name>};\n*day;\n*night;\n*pcre_match(\"<string>\",\"<regex>\");\n*defpattern <set number>,\"<regular expression pattern>\",\"<event label>\";\n*activatepset <set number>;\n*deactivatepset <set number>;\n*deletepset <set number>;\n*pow(<number>,<power>)\n*log10(<number>)\n*sqrt(<number>)\n*distance(<x0>,<y0>,<x1>,<y1>)\n*min(<number>{,<number>...<number>})\n*max(<number>{,<number>...<number>})\n*md5(\"<string>\")\n*query_sql(\"your MySQL query\"{, <array variable>{, <array variable>{, ...}}});\n*query_logsql(\"your MySQL query\"{, <array variable>{, <array variable>{, ...}}});\n*escape_sql(<value>)\n*setiteminfo(<item id>,<type>,<value>)\n*setitemscript(<item id>,<\"{ new item script }\">{,<type>});\n*atoi(\"<string>\")\n*axtoi(\"<string>\")\n*strtol(\"string\", base)\n*compare(\"<string>\",\"<substring>\")\n*strcmp(\"<string>\",\"<string>\")\n*getstrlen(\"<string>\")\n*charisalpha(\"<string>\",<position>)\n*charat(<string>,<index>)\n*setchar(<string>,<char>,<index>)\n*insertchar(<string>,<char>,<index>)\n*delchar(<string>,<index>)\n*strtoupper(<string>)\n*strtolower(<string>)\n*charisupper(<string>,<index>)\n*charislower(<string>,<index>)\n*substr(<string>,<start_index>,<end_index>)\n*explode(<dest_array>,<string>,<delimiter>)\n*implode(<string_array>{,<glue>})\n*sprintf(<format>{,param{,param{,...}}})\n*sscanf(<string>,<format>{,param{,param{,...}}})\n*strpos(<haystack>,<needle>{,<offset>})\n*replacestr(<input>, <search>, <replace>{, <usecase>{, <count>}})\n*countstr(<input>, <search>{, <usecase>})\n*setfont <font>;\n*showdigit <value>{,<type>};\n*petskillbonus <bonus type>,<value>,<duration>,<delay>;\n*petrecovery <status type>,<delay>;\n*petloot <max items>;\n*petskillsupport <skill id>,<skill level>,<delay>,<percent hp>,<percent sp>;\n*petskillsupport \"<skill name>\",<skill level>,<delay>,<percent hp>,<percent sp>;\n*petskillattack <skill id>,<damage>,<number of attacks>,<rate>,<bonusrate>;\n*petskillattack \"<skill name>\",<damage>,<number of attacks>,<rate>,<bonusrate>;\n*bpet;\n*makepet <pet id>;\n*homshuffle;\n*setcell \"<map name>\",<x1>,<y1>,<x2>,<y2>,<type>,<flag>;\n*checkcell (\"<map name>\",<x>,<y>,<type>);\n*setwall \"<map name>\",<x>,<y>,<size>,<dir>,<shootable>,\"<name>\";\n*delwall \"<name>\";\n*readbook <book id>,<page>;\n*instance_create(\"<instance name>\",<owner id>{,<optional owner_type>});\n*instance_destroy {<instance id>};\n*instance_attachmap(\"<map name>\",<instance id>{,<use base name>{,\"<new map name>\"}});\n*instance_detachmap \"<map name>\"{,<instance id>};\n*instance_init <instance id>;\n*instance_announce <instance id>,\"<text>\",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}};\n*instance_attach <instance id>;\n*instance_npcname(\"<npc name>\"{,<instance id>});\n*has_instance(\"<map name>\"{,<instance id>});\n*has_instance2(\"<map name>\");\n*instance_id();\n*instance_warpall \"<map name>\",<x>,<y>{,<instance id>};\n*instance_set_timeout <alive timeout>,<idle timeout>{,<instance id>};\n*instance_check_party(<party id>{,<amount>{,<min>{,<max>}}});\n*instance_check_guild(<guild_id>{,<amount>{,<min>{,<max>}}});\n*instance_set_respawn(<map_name>,<x>,<y>{,<instance_id>});\n*instance_mapname(\"<map name>\"{,<instance id>})\n*questinfo <Quest ID>, <Icon> {, <Map Mark Color>{, <Job Class>}};\n*setquest <ID>;\n*questinfo is set, and the same ID is specified here, the icon will be cleared when the quest is set.\n*completequest <ID>{,<ID2>};\n*erasequest <ID>{,<ID2>};\n*changequest <ID>,<ID2>;\n*questprogress(<ID>{,PLAYTIME|HUNTING})\n*questactive(<ID>)\n*showevent <icon>{,<mark color>}\n*waitingroom2bg_single(<battle group>,\"<mapname>\",<x>,<y>,\"<npc name>\");\n*waitingroom2bg(\"<mapname>\",<x>,<y>,\"<On Quit Event>\",\"<On Death Event>\"{,\"<npc name>\"});\n*bg_team_setxy <Battle Group ID>,<x>,<y>;\n*bg_warp <Battle Group>,\"<Mapname>\",<x>,<y>;\n*bg_monster <Battle Group>,\"<map name>\",<x>,<y>,\"<name to show>\",<mob id>,\"<event label>\";\n*bg_monster(<Battle Group>,\"<map name>\",<x>,<y>,\"<name to show>\",<mob id>,\"<event label>\");\n*bg_monster_set_team <GID>,<Battle Group>;\n*bg_leave;\n*bg_destroy <Batte Group>;\n*areapercentheal \"<mapname>\",<x1>,<y1>,<x2>,<y2>,<hp>,<sp>;\n*bg_get_data(<Battle Group>,<type>);\n*bg_getareausers(<battle group>,<map name>,<x0>,<y0>,<x1>,<y1>);\n*bg_updatescore \"<mapname>\",<Guillaume Score>,<Croix Score>;\n*mercenary_create <class>,<contract time>;\n*mercenary_heal <hp>,<sp>;\n*mercenary_sc_start <type>,<tick>,<val1>;\n*mercenary_get_calls(<guild>);\n*mercenary_set_calls <guild>,<value>;\n*mercenary_get_faith(<guild>);\n*mercenary_set_faith <guild>,<value>;\n*getmercinfo(<type>{,<char id>});\n*queue();\n*queuesize(<queue_id>);\n*queueadd(<queue_id>,<var_id>);\n*queueremove(<queue_id>,<var_id>);\n*queueopt(<queue_id>,<optionType>,{Optional <option val>});\n*queuedel(<queue_id>);\n*queueiterator(<queue_id>);\n*qicheck(<queue_iterator_id>);\n*qiget(<queue_iterator_id>);\n*qiclear(<queue_iterator_id>);\n*openshop({NPC_Name});\n*sellitem <Item_ID>{,<price>{,<qty>}};\n*stopselling <Item_ID>;\n*setcurrency <Val1>{,<Val2>};\n*Cash* Points field\n*tradertype(<Type>);\n*purchaseok();\n*shopcount(<Item_ID>);",
 			"settings":
 			{
-				"buffer_size": 20166,
+				"buffer_size": 20167,
 				"line_ending": "Windows",
 				"name": "*mes \"<string>\"{,\"<string>\"...\"<string>\"};"
 			}
@@ -184,17 +223,29 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 150.0,
+		"last_filter": "remove",
 		"selected_items":
 		[
 			[
-				"pack",
-				"Package Control: Install Package"
+				"remove",
+				"Package Control: Remove Package"
 			],
 			[
 				"Package Control: ",
-				"Package Control: List Packages"
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
 			],
 			[
 				"install",
@@ -244,6 +295,10 @@
 	],
 	"file_history":
 	[
+		"/C/Users/MC 100/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/C/Users/MC 100/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/MC 100/AppData/Roaming/Sublime Text 3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/C/Users/MC 100/AppData/Roaming/Sublime Text 3/Packages/GitGutter/Default (Windows).sublime-keymap",
 		"/C/Users/MC 100/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
 		"/C/Users/MC 100/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
 		"/C/Users/MC 100/AppData/Roaming/Sublime Text 3/Packages/User/Cronus/cronus.sublime-snippet",
@@ -274,7 +329,7 @@
 	],
 	"find":
 	{
-		"height": 46.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -329,7 +384,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -338,15 +393,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12816,
+						"buffer_size": 14788,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1769,
-								1769
+								2975,
+								2975
 							]
 						],
 						"settings":
@@ -359,31 +414,21 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -394,47 +439,57 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/AAAPackageDev/Syntax Definitions/Sublime Completions.tmLanguage",
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "while.sublime-snippet",
+					"file": "for.sublime-snippet",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 233,
+						"buffer_size": 253,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								206,
-								206
+								225,
+								225
 							]
 						],
 						"settings":
@@ -442,61 +497,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
 							],
 							"syntax": "Packages/XML/XML.tmLanguage"
 						},
@@ -504,7 +559,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -513,15 +568,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8656,
+						"buffer_size": 9442,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7473,
-								7473
+								8122,
+								8122
 							]
 						],
 						"settings":
@@ -529,61 +584,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"syntax": "Packages/AAAPackageDev/Syntax Definitions/Sublime Text Syntax Def (YAML).tmLanguage",
 							"tab_size": 2,
@@ -591,10 +646,10 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 720.0,
+						"translation.y": 915.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -603,15 +658,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5916,
+						"buffer_size": 6005,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								951,
-								951
+								1108,
+								1108
 							]
 						],
 						"settings":
@@ -619,11 +674,36 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -634,46 +714,21 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
@@ -683,13 +738,13 @@
 						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -705,8 +760,8 @@
 						"selection":
 						[
 							[
-								897,
-								897
+								1047,
+								1047
 							]
 						],
 						"settings":
@@ -714,70 +769,70 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"syntax": "Packages/User/Cronus/cronus.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 60.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -793,8 +848,8 @@
 						"selection":
 						[
 							[
-								4328,
-								4328
+								2688,
+								2688
 							]
 						],
 						"settings":
@@ -802,70 +857,70 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"syntax": "Packages/User/Cronus/cronus.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2509.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -881,8 +936,8 @@
 						"selection":
 						[
 							[
-								6035,
-								6035
+								90655,
+								90655
 							]
 						],
 						"settings":
@@ -890,69 +945,69 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3600.0,
+						"translation.y": 37015.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -960,15 +1015,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20166,
+						"buffer_size": 20167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								534,
-								534
+								986,
+								986
 							]
 						],
 						"settings":
@@ -982,21 +1037,31 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1007,40 +1072,30 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"default_dir": "E:\\Users\\MC 65\\Documents\\NerdzRO\\SERVER\\src",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 126.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

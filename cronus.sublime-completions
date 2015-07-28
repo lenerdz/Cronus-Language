@@ -43,6 +43,18 @@
 			{ "trigger": "getchildid", "contents": "getchildid()" },
 			{ "trigger": "getmotherid", "contents": "getmotherid()" },
 			{ "trigger": "getfatherid", "contents": "getfatherid()" },
+			{ "trigger": "ispartneron", "contents": "ispartneron()" },
+			{ "trigger": "getpartnerid", "contents": "getpartnerid()" },
+			{ "trigger": "getpartyname", "contents": "getpartyname(${1:ID})" },
+			{ "trigger": "getpartymember", "contents": "getpartymember ${1:ID}, ${2:tipo}" },
+			{ "trigger": "getpartymember", "contents": "getpartymember ${1:ID}, ${2:tipo};" },
+			{ "trigger": "getpartyleader", "contents": "getpartyleader(${1:ID}, ${2:tipo})" },
+			{ "trigger": "getlook", "contents": "getlook(${1:tipo})" },
+			{ "trigger": "getsavepoint", "contents": "getsavepoint(${1:tipo(0=mapa|1=X|2=Y)})" },
+			{ "trigger": "getcharip", "contents": "getcharip(${1:nome, conta ou ID?})" },
+			{ "trigger": "sit", "contents": "sit(${1:nome do char?})" },
+			{ "trigger": "stand", "contents": "stand(${1:nome do char?})" },
+			{ "trigger": "issit", "contents": "issit(${1:nome do char?})" },
 
 
 
