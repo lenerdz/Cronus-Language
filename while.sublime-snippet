@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[while (${1:condição}) {
+    		${2:bloco de comandos}
+    	}]]></content>
+    <tabTrigger>while</tabTrigger>
+    <scope>source.cronus</scope>
+    <description>Bloco "enquanto"</description>
+</snippet>
+

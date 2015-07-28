@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[for (${1:variável} = 0; $1 < ${2:limite}; $1++) {
+    		${2:bloco de comandos}
+    	}]]></content>
+    <tabTrigger>for</tabTrigger>
+    <scope>source.cronus</scope>
+    <description>Bloco "para"</description>
+</snippet>
+

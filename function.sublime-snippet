@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[function ${1:nome}(${2:parâmetros}) {
+    		${3:função}
+    	}]]></content>
+    <tabTrigger>function</tabTrigger>
+    <scope>source.cronus</scope>
+    <description>Nova função</description>
+</snippet>
+

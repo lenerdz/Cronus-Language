@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[if (${1:condição}) {
+    		${2:bloco de comandos}
+    	}]]></content>
+    <tabTrigger>if</tabTrigger>
+    <scope>source.cronus</scope>
+    <description>Nova função</description>
+</snippet>
+
