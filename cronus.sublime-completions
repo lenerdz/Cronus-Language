@@ -31,6 +31,22 @@
 			{ "trigger": "setarray", "contents": "setarray ${1:array}, ${2:valores}" },
 			{ "trigger": "cleararray", "contents": "cleararray ${1:array}[${2:primeiro valor}], ${3:valor}, ${4:quantidade de valores}" },
 			{ "trigger": "copyarray", "contents": "copyarray ${1:array destino}[${2:primeiro valor}], ${3:array fonte}[${4:primeiro valor}], ${5:quantidade de valores}" },
+			{ "trigger": "deletearray", "contents": "deletearray ${1:array}[${2:primeiro valor}], ${3:quantidade de valores}" },
+			{ "trigger": "strcharinfo", "contents": "strcharinfo(${1:tipo(0=nome|1=party|2=guild|3=mapa)})" },
+			{ "trigger": "strnpcinfo", "contents": "strnpcinfo(${1:tipo(0=nome completo|1=parte visível|2=parte invisível|3=nome único|4=mapa)})" },
+			{ "trigger": "charid2rid", "contents": "charid2rid(${1:ID})" },
+			{ "trigger": "getarraysize", "contents": "getarraysize(${1:ID})" },
+			{ "trigger": "getelementofarray", "contents": "getelementofarray(${1:array},${2:índice})" },
+			{ "trigger": "readparam", "contents": "readparam(${1:parâmetro(número ou nome)})" },
+			{ "trigger": "getcharid", "contents": "getcharid(${1:tipo(0=charID|1=partyID|2=guildID|3=accountID|4=BGID)})" },
+			{ "trigger": "getnpcid", "contents": "getnpcid(${1:tipo})" },
+			{ "trigger": "getchildid", "contents": "getchildid()" },
+			{ "trigger": "getmotherid", "contents": "getmotherid()" },
+			{ "trigger": "getfatherid", "contents": "getfatherid()" },
+
+
+
+
 
 
 
