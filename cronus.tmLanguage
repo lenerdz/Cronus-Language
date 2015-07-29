@@ -11,46 +11,6 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>begin</key>
-			<string>(menu)\s+</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.character.cronus</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>Menu</string>
-			<key>end</key>
-			<string>;</string>
-			<key>name</key>
-			<string>meta.cronus</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>string.quoted.double.cronus</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.cronus</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(,?(\"[^"]+\")\s*,\s*([a-zA-Z0-9_\-]+))</string>
-					<key>name</key>
-					<string>meta.cronus</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
 			<key>comment</key>
 			<string>Comentários</string>
 			<key>match</key>
@@ -67,6 +27,25 @@
 			<string>\"</string>
 			<key>name</key>
 			<string>string.quoted.double.cronus</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\^([0-9]|[a-f]|[A-F]){6}</string>
+					<key>name</key>
+					<string>constant.other.cronus</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\'</string>
+			<key>comment</key>
+			<string>Texto single quote</string>
+			<key>end</key>
+			<string>\'</string>
+			<key>name</key>
+			<string>string.quoted.single.cronus</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -222,6 +201,14 @@
 			<string>(.*),(\d+),(\d+),(\d)\t(script)\t(.+)\t(\d+)</string>
 			<key>name</key>
 			<string>meta.cronus</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Variáveis</string>
+			<key>match</key>
+			<string>([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?</string>
+			<key>name</key>
+			<string>variable.parameter.cronus</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

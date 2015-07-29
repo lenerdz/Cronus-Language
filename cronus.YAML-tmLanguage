@@ -7,18 +7,18 @@ uuid: 350f24c5-ac9f-4d06-826d-cb87aed8e1cf
 
 patterns:
 
-- comment: Menu
-  name: meta.cronus
-  begin: (menu)\s+
-  beginCaptures:
-    '1': {name: constant.character.cronus} 
-  end: ;
-  patterns:
-  - match: (,?(\"[^"]+\")\s*,\s*([a-zA-Z0-9_\-]+)) #Resolver problema dos itens encapsulados dentro das quotes
-    name: meta.cronus
-    captures:
-      '2': {name: string.quoted.double.cronus}
-      '3': {name: entity.name.function.cronus}
+# - comment: Menu
+#   name: meta.cronus
+#   begin: (menu)\s+
+#   beginCaptures:
+#     '1': {name: constant.character.cronus} 
+#   end: ;
+#   patterns:
+#   - match: (,?(\"[^"]+\")\s*,\s*([a-zA-Z0-9_\-]+)) #Resolver problema dos itens encapsulados dentro das quotes
+#     name: meta.cronus
+#     captures:
+#       '2': {name: string.quoted.double.cronus}
+#       '3': {name: entity.name.function.cronus}
 
 
 - comment: Comentários
@@ -30,6 +30,14 @@ patterns:
   name: string.quoted.double.cronus
   begin: \"
   end: \"
+  patterns:
+        # Cores
+        - match: \^([0-9]|[a-f]|[A-F]){6}
+          name: constant.other.cronus
+- comment: Texto single quote
+  name: string.quoted.single.cronus
+  begin: \'
+  end: \'
   patterns:
         # Cores
         - match: \^([0-9]|[a-f]|[A-F]){6}
@@ -49,11 +57,14 @@ patterns:
 - name: comment.block.cronus
   begin: /\*
   end: \*/
-  
+
+
 
 - comment: operators
   name: keyword.operator.cronus
   match: ([\+\-\*\%\=\&\|\~\^\<\>\?\:\!\/]+)
+
+
 
 
 - name: support.function.cronus
@@ -95,6 +106,13 @@ patterns:
     '6': {name: entity.name.function.cronus}
     '7': {name: constant.character.cronus}
 
+#PERMANENT MONSTER SPAWN
+#WARP POINT
+#SHOP
+#TRADER
+#DUPLICATE
+#FUNCTION
+
 #- comment: SWITCH CASE
 #  name: entity.name.function.cronus
 #  begin: switch\(.*\)\{
@@ -117,6 +135,8 @@ patterns:
 
 #SWITCH → CASE
 
+#No futuro, implementar cada comando separado com suas sintaxes
+
 #MUDAR CÓDIGO DAS CORES HEXADECIMAIS (OK!)
 
 #Se basear nas definições do link para fazer os captures, beginCaptures, endCaptures, matches, multi line itens e includes do SQL: https://github.com/SublimeText/AAAPackageDev/blob/master/Syntax%20Definitions/Sublime%20Text%20Syntax%20Def%20(YAML).YAML-tmLanguage
@@ -137,9 +157,11 @@ patterns:
   #begin: (mes|message)
   #end: \;
 
-#- comment: Variáveis
-#  name: variable.parameter.cronus
-#  match: ([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?
+- comment: Variáveis
+  name: variable.parameter.cronus
+  match: ([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?
+
+
 
 #- comment: menu
 #  name: keyword.other.cronus
