@@ -1,0 +1,517 @@
+*mes "<string>"{,"<string>"..."<string>"};
+*next;
+*close;
+*close2;
+*end;
+*set <variable>,<expression>;
+*set(<variable>,<expression>)
+*setd "<variable name>",<value>;
+*getd("<variable name>")
+*getvariableofnpc(<variable>,"<npc name>")
+*goto <label>;
+*menu "<option_text>",<target_label>{,"<option_text>",<target_label>,...};
+*select("<option>"{,"<option>",...})
+*prompt("<option>"{,"<option>",...})
+*input(<variable>{,<min>{,<max>}})
+*callfunc "<function>"{,<argument>,...<argument>};
+*callfunc("<function>"{,<argument>,...<argument>})
+*callsub <label>{,<argument>,...<argument>};
+*callsub(<label>{,<argument>,...<argument>})
+*getarg(<index>{,<default_value>})
+*getargcount()
+*return {<value>};
+*function <function name>;
+*function <function name> {
+*is_function("<function name>")
+*if (<condition>) <statement>;
+*while (<condition>) <statement>;
+*for (<variable initialization>; <condition>; <variable update>) <statement>;
+*do { <statement>; } while (<condition>);
+*freeloop(<toggle>)
+
+*setarray <array name>[<first value>],<value>{,<value>...<value>};
+*cleararray <array name>[<first value to alter>],<value>,<number of values to set>;
+*copyarray <destination array>[<first value>],<source array>[<first value>],<amount of data to copy>;
+*deletearray <array name>[<first value>],<how much to delete>;
+*strcharinfo(<type>)
+*strnpcinfo(<type>)
+*charid2rid(<char id>)
+*getarraysize(<array name>)
+*getelementofarray(<array name>,<index>)
+*readparam(<parameter number>)
+*getcharid(<type>{,"<character name>"})
+*getnpcid(<type>{,"<npc name>"});
+*getchildid()
+*getmotherid()
+*getfatherid()
+*ispartneron()
+*getpartnerid()
+*getpartyname(<party id>)
+*getpartymember <party id>{,<type>};
+*getpartyleader(<party id>{,<type>})
+*getlook(<type>)
+*getsavepoint(<information type>)
+*getcharip({"<character name>"|<account id>|<char id>})
+*sit({"<character name>"})
+*stand({"<character name>"})
+*issit({"<character name>"})
+*getequipid(<equipment slot>)
+*getequipname(<equipment slot>)
+*getitemname(<item id>)
+*getbrokenid(<number>)
+*getbrokencount()
+*getequipisequiped(<equipment slot>)
+*getequipisenableref(<equipment slot>)
+*getequiprefinerycnt(<equipment slot>)
+*getequipweaponlv(<equipment slot>)
+*getequippercentrefinery(<equipment slot>)
+*getareadropitem("<map name>",<x1>,<y1>,<x2>,<y2>,<item>)
+*getequipcardcnt(<equipment slot>)
+*getinventorylist;
+*getcartinventorylist;
+*cardscnt()
+*getrefine()
+*getnameditem(<item id>,"<name to inscribe>");
+*getnameditem("<item name>","<name to inscribe>");
+*getitemslots(<item ID>)
+*getiteminfo(<item ID>,<type>)
+*getequipcardid(<equipment slot>,<card slot>)
+*getmapxy("<variable for map name>",<variable for x>,<variable for y>,<type>{,"<search string>"})
+*getgmlevel()
+*getgroupid()
+*gettimetick(<tick type>)
+*gettime(<type>)
+*gettimestr(<format string>,<max length>)
+*getusers(<type>)
+*getmapusers("<map name>")
+*getareausers({"<map name>",}{<x1>,<y1>,<x2>,<y2>})
+*getareausers({"<map name>",}{<radius>})
+*_in" maps, due to all the shops and houses.
+*getusersname;
+*getguildname(<guild id>)
+*getguildmaster(<guild id>)
+*getguildmasterid(<guild id>)
+*getcastlename("<map name>")
+*getcastledata("<map name>",<type of data>)
+*setcastledata "<map name>",<type of data>,<value>;
+*getgdskilllv(<guild id>,<skill id>)
+*getgdskilllv(<guild id>,"<skill name>")
+*requestguildinfo <guild id>{,"<event label>"};
+*getmapguildusers(<mapname>,<guild id>)
+*getguildmember <guild id>{,<type>};
+*getskilllv(<skill id>)
+*getskilllv("<skill name>")
+*getskilllist;
+*getpetinfo(<type>)
+*petstat(<flag>)
+*getmonsterinfo(<mob ID>,<type>)
+*addmonsterdrop(<mob id or name>, <item id>, <rate>)
+*delmonsterdrop(<mob id or name>, <item id>)
+*getmobdrops(<mob id>)
+*skillpointcount()
+*getscrate(<effect type>,<base rate>{,<GID>})
+*playerattached()
+*isloggedin(<account id>{,<char id>})
+*checkweight(<item id>,<amount>{,<item id>,<amount>,<item id>,<amount>,...});
+*checkweight("<item name>",<amount>{,"<item name>",<amount>,"<item name>",<amount>,...});
+*checkweight2(<id_array>,<amount_array>);
+*basicskillcheck()
+*checkoption(<option number>)
+*checkoption1(<option number>)
+*checkoption2(<option number>)
+*setoption <option number>{,<flag>};
+*setcart {<type>};
+*checkcart()
+*setfalcon {<flag>};
+*checkfalcon()
+*setmount {<flag>};
+*checkmount()
+*setcashmount;
+*hascashmount()
+*checkwug()
+*checkvending({"<Player Name>"})
+*checkchatting({"<Player Name>"})
+*checkidle({"<Player Name>"})
+*agitcheck()
+*agitcheck2()
+*isnight()
+*checkre(<type>)
+*isequipped(<id>{,<id>{,<id>{,<id>}}})
+*isequippedcnt(<card id>{,<card id>{,<card id>{,<card id>}}})
+*checkequipedcard(<card id>)
+*getequipisidentify(<equipment slot>)
+*attachrid(<account ID>)
+*detachrid;
+*rid2name(<rid>)
+*message "<character name>","<message>";
+*dispbottom "<message>";
+*showscript "<message>"{,<GID>};
+*warp "<map name>",<x>,<y>;
+*areawarp "<from map name>",<x1>,<y1>,<x2>,<y2>,"<to map name>",<x3>,<y3>{,<x4>,<y4>};
+*warpparty "<to_mapname>",<x>,<y>,<party_id>,{"<from_mapname>"};
+*warpchar "<mapname>",<x>,<y>,<char_id>;
+*warpguild "<mapname>",<x>,<y>,<guild_id>;
+*warppartner("<map name>",<x>,<y>);
+*savepoint "<map name>",<x>,<y>;
+*heal <hp>,<sp>;
+*itemheal <hp>,<sp>;
+*2)/100]
+*2)/100]
+*percentheal <hp>,<sp>;
+*recovery;
+*jobchange <job number>{,<upper flag>};
+*jobname (<job number>)
+*eaclass ({<job number>})
+*roclass <job number> {,<gender>}
+*changebase <job ID number>;
+*classchange <view id>,<type>;
+*changesex;
+*getexp <base xp>,<job xp>;
+*setlook <look type>,<look value>;
+*changelook <look type>,<look value>;
+*pushpc <direction>,<cells>;
+*get_version()
+*montransform <monster id>,<duration>{,<sc_type>{,<val1>{,<val2>{,<val3>{,<val4>}}}}}; 
+*montransform "<monster name>",<duration>{,<sc_type>{,<val1>{,<val2>{,<val3>{,<val4>}}}}}; 
+*getitem <item id>,<amount>{,<account ID>};
+*getitem "<item name>",<amount>{,<account ID>};
+*getitem2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};
+*getitem2 "<item name>",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};
+*5)<<8);
+*getitembound <item id>,<amount>,<bound type>{,<account ID>};
+*getitembound "<item name>",<amount>,<bound type>{,<account ID>};
+*getitembound2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>,<bound type>;
+*getitembound2 "<item name>",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>,<bound type>;
+*countbound({<bound type>})
+*checkbound(<item_id>{,<bound_type>{,<refine>{,<attribute>{,<card_1>{,<card_2>{,<card_3>{,<card_4>}}}}}}});
+*getnameditem <item id>,<character name|character ID>;
+*getnameditem "<item name>",<character name|character ID>;
+*rentitem <item id>,<time>;
+*rentitem "<item name>",<time>;
+*makeitem <item id>,<amount>,"<map name>",<X>,<Y>;
+*makeitem "<item name>",<amount>,"<map name>",<X>,<Y>;
+*cleanarea "<map name>",<x1>,<y1>,<x2>,<y2>;
+*cleanmap "<map name>";
+*searchitem <array name>,"<item name>";
+*delitem <item id>,<amount>{,<account ID>};
+*delitem "<item name>",<amount>{,<account ID>};
+*delitem2 <item id>,<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};
+*delitem2 "<item name>",<amount>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<account ID>};
+*countitem(<item id>)
+*countitem("<item name>")
+*countitem2(<item id>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>)
+*countitem2("<item name>",<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>)
+*groupranditem <item_id/constant>;
+*getrandgroupitem <item_id/constant>,<quantity>;
+*packageitem
+*enable_items;
+*disable_items;
+*itemskill <skill id>,<skill level>,{flag};
+*itemskill "<skill name>",<skill level>,{flag};
+*itemeffect <item id>;
+*itemeffect "<item name>";
+*consumeitem is an alias of itemeffect (added for compatibility)
+*produce <item level>;
+*cooking <dish level>;
+*makerune <% success bonus>;
+*successremovecards <equipment slot>;
+*failedremovecards <equipment slot>,<type>;
+*repair <broken item number>;
+*repairall;
+*successrefitem <equipment slot>{,<upgrade_count>};
+*failedrefitem <equipment slot>;
+*downrefitem <equipment slot>{,<downgrade_count>};
+*unequip <equipment slot>;
+*clearitem;
+*equip <item id>;
+*equip2 <item id>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>;
+*autoequip <item id>,<option>;
+*buyingstore <slots>;
+*searchstores <uses>,<effect>;
+*delequip <equipment slot>;
+*openstorage;
+*openmail;
+*openauction;
+*guildopenstorage()
+*guildchangegm(<guild id>,<new master's name>)
+*guildgetexp <amount>;
+*guildskill <skill id>,<level>
+*guildskill "<skill name>",<level>
+*resetlvl <action type>;
+*resetstatus;
+*resetskill;
+*sc_start 	<effect type>,<ticks>,<value 1>{,<rate>,<flag>{,<GID>}};
+*sc_start2 	<effect type>,<ticks>,<value 1>,<value 2>{,<rate>,<flag>{,<GID>}};
+*sc_start4 	<effect type>,<ticks>,<value 1>,<value 2>,<value 3>,<value 4>{,<rate>,<flag>{,<GID>}};
+*sc_end 	<effect type>{,<GID>};
+*getstatus <effect type>{,<type>};
+*skilleffect <skill id>,<number>;
+*skilleffect "<skill name>",<number>;
+*npcskilleffect <skill id>,<number>,<x>,<y>;
+*npcskilleffect "<skill name>",<number>,<x>,<y>;
+*specialeffect <effect number>{,<send_target>{,"<NPC Name>"}};
+*specialeffect2 <effect number>{,<send_target>{,"<Player Name>"}};
+*statusup <stat>;
+*statusup2 <stat>,<amount>;
+*bonus <bonus type>,<val1>;
+*bonus2 <bonus type>,<val1>,<val2>;
+*bonus3 <bonus type>,<val1>,<val2>,<val3>;
+*bonus4 <bonus type>,<val1>,<val2>,<val3>,<val4>;
+*bonus5 <bonus type>,<val1>,<val2>,<val3>,<val4>,<val5>;
+*autobonus <bonus script>,<rate>,<duration>{,<flag>,{<other script>}};
+*autobonus2 <bonus script>,<rate>,<duration>{,<flag>,{<other script>}};
+*autobonus3 <bonus script>,<rate>,<duration>,<skill id>,{<other script>};
+*autobonus3 <bonus script>,<rate>,<duration>,"<skill name>",{<other script>};
+*skill <skill id>,<level>{,<flag>};
+*skill "<skill name>",<level>{,<flag>};
+*addtoskill <skill id>,<level>{,<flag>};
+*addtoskill "<skill name>",<level>{,<flag>};
+*nude;
+*disguise <Monster ID>;
+*undisguise;
+*marriage("<spouse name>");
+*wedding;
+*divorce()
+*pcfollow <id>,<target id>;
+*pcstopfollow <id>;
+*pcblockmove <id>,<option>;
+*monster     "<map name>",<x>,<y>,"<name to show>",<mob id>,<amount>{,"<event label>"{,<size>{,<ai>}}};
+*areamonster "<map name>",<x1>,<y1>,<x2>,<y2>,"<name to show>",<mob id>,<amount>{,"<event label>"{,<size>{,<ai>}}};
+*areamobuseskill "<map name>",<x>,<y>,<range>,<mob id>,<skill id>,<skill level>,<cast time>,<cancelable>,<emotion>,<target type>;
+*areamobuseskill "<map name>",<x>,<y>,<range>,<mob id>,"<skill name>",<skill level>,<cast time>,<cancelable>,<emotion>,<target type>;
+*killmonster "<map name>","<event label>"{,<type>};
+*killmonsterall "<map name>"{,<type>};
+*strmobinfo(<type>,<monster id>);
+*mobcount("<map name>","<event label>")
+*clone "<map name>",<x>,<y>,"<event>",<char id>{,<master_id>{,<mode>{,<flag>,<duration>}}}
+*summon "Monster name",<monster id>{,<Time Out>{,"event label"}};
+*homevolution;
+*gethominfo(<type>)
+*morphembryo;
+*hommutate {<ID>};
+*checkhomcall()
+*unitwalk <GID>,<x>,<y>;
+*unitwalk <GID>,<target_GID>;
+*unitkill <GID>;
+*unitwarp <GID>,<Mapname>,<x>,<y>;
+*unitattack <GID>,<Target ID>;
+*unitstop <GID>;
+*unittalk <GID>,<Text>;
+*unitemote <GID>,<Emote>;
+*disablenpc "<NPC object name>";
+*enablenpc "<NPC object name>";
+*hideonnpc "<NPC object name>";
+*hideoffnpc "<NPC object name>";
+*doevent "<NPC object name>::<event label>";
+*donpcevent "<NPC object name>::<event label>";
+*npctalk "<message>";
+*setnpcdisplay("<npc name>", "<display name>", <class id>, <size>)
+*setnpcdisplay("<npc name>", "<display name>", <class id>)
+*setnpcdisplay("<npc name>", "<display name>")
+*setnpcdisplay("<npc name>", <class id>)
+*addtimer <ticks>,"NPC::OnLabel";
+*deltimer "NPC::OnLabel";
+*addtimercount "NPC::OnLabel",<ticks>;
+*initnpctimer	{ "<NPC name>" {, <Attach Flag>} } |
+*stopnpctimer	{ "<NPC name>" {, <Detach Flag>}  } |
+*startnpctimer	{ "<NPC name>" {, <Attach Flag>} } |
+*setnpctimer	<tick>{,"<NPC name>"};
+*getnpctimer	(<type of information>{,"<NPC name>"})
+*attachnpctimer	{"<character name>"};
+*detachnpctimer	{"<NPC name>"};
+*sleep {<milliseconds>};
+*sleep2 {<milliseconds>};
+*awake "<NPC name>";
+*progressbar "<color>",<seconds>;
+*announce "<text>",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}};
+*mapannounce "<map name>","<text>",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}}};
+*areaannounce "<map name>",<x1>,<y1>,<x2>,<y2>,"<text>",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}}};
+*callshop "<name>",<option>;
+*npcshopitem "<name>",<item id>,<price>{,<item id>,<price>{,<item id>,<price>{,...}}}
+*npcshopadditem "<name>",<item id>,<price>{,<item id>,<price>{,<item id>,<price>{,...}}}
+*npcshopdelitem "<name>",<item id>{,<item id>{,<item id>{,...}}}
+*npcshopattach "<name>"{,<flag>}
+*waitingroom "<chatroom name>",<limit>{,<event label>,<trigger>,<required zeny>,<min lvl>,<max lvl>};
+*delwaitingroom {"<NPC object name"};
+*enablewaitingroomevent {"<NPC object name>"};
+*disablewaitingroomevent {"<NPC object name>"};
+*getwaitingroomstate(<information type>{,"<NPC object name>"})
+*warpwaitingpc "<map name>",<x>,<y>{,<number of people>};
+*kickwaitingroomall {"<NPC object name>"};
+*setmapflagnosave "<map name>","<alternate map name>",<x>,<y>;
+*setmapflag "<map name>",<flag>{,<val>};
+*removemapflag "<map name>",<flag>;
+*getmapflag("<map name>",<flag>)
+*setbattleflag "<battle flag>",<value>;
+*getbattleflag("<battle flag>")
+*warpportal <x>,<y>,"<mapname>",<x>,<y>;
+*mapwarp "<from map>","<to map>",<x>,<y>{,<type>,<ID>};
+*maprespawnguildid "<map name>",<guild id>,<flag>;
+*agitstart;
+*agitend;
+*agitstart2;
+*agitend2;
+*gvgon "<map name>";
+*gvgoff "<map name>";
+*flagemblem <guild id>;
+*guardian "<map name>",<x>,<y>,"<name to show>",<mob id>{,"<event label>"{,<guardian index>}};
+*guardianinfo("<map name>", <guardian number>, <type>);
+*npcspeed <speed value>;
+*npcwalkto <x>,<y>;
+*npcstop;
+*movenpc "<NPC name>",<x>,<y>{,<dir>};
+*debugmes "<message>";
+*logmes "<message>";
+*globalmes "<message>"{,"<NPC name>"};
+*channelmes("<#channel>", "<message>");
+*rand(<number>{,<number>});
+*viewpoint <action>,<x>,<y>,<point number>,<color>;
+*cutin "<filename>",<position>;
+*pet <pet id>;
+*emotion <emotion number>{,<target>{,"<target name>"}};
+*misceffect <effect number>;
+*soundeffect "<effect filename>",<type>;
+*soundeffectall "<effect filename>",<type>{,"<map name>"}{,<x0>,<y0>,<x1>,<y1>};
+*playbgm "<BGM filename>";
+*playbgmall "<BGM filename>"{,"<map name>"{,<x0>,<y0>,<x1>,<y1>}};
+*pvpon "<map name>";
+*pvpoff "<map name>";
+*atcommand "<command>";
+*charcommand "<command>";
+*bindatcmd "command","<NPC object name>::<event label>"{,<group level>,<group level char>,<log>};
+*unbindatcmd "command";
+*useatcmd "command";
+*unitskilluseid <GID>,<skill id>,<skill lvl>{,<target id>};
+*unitskilluseid <GID>,"<skill name>",<skill lvl>{,<target id>};
+*unitskillusepos <GID>,<skill id>,<skill lvl>,<x>,<y>;
+*unitskillusepos <GID>,"<skill name>",<skill lvl>,<x>,<y>;
+*npcskill <skill id>,<skill lvl>,<stat point>,<NPC level>;
+*npcskill "<skill name>",<skill lvl>,<stat point>,<NPC level>;
+*setnpcdistance <distance>
+*getnpcdir {<name>};
+*setnpcdir {<name>,} <direction>;
+*getnpcclass {<name>};
+*day;
+*night;
+*pcre_match("<string>","<regex>");
+*defpattern <set number>,"<regular expression pattern>","<event label>";
+*activatepset <set number>;
+*deactivatepset <set number>;
+*deletepset <set number>;
+*pow(<number>,<power>)
+*log10(<number>)
+*sqrt(<number>)
+*distance(<x0>,<y0>,<x1>,<y1>)
+*min(<number>{,<number>...<number>})
+*max(<number>{,<number>...<number>})
+*md5("<string>")
+*query_sql("your MySQL query"{, <array variable>{, <array variable>{, ...}}});
+*query_logsql("your MySQL query"{, <array variable>{, <array variable>{, ...}}});
+*escape_sql(<value>)
+*setiteminfo(<item id>,<type>,<value>)
+*setitemscript(<item id>,<"{ new item script }">{,<type>});
+*atoi("<string>")
+*axtoi("<string>")
+*strtol("string", base)
+*compare("<string>","<substring>")
+*strcmp("<string>","<string>")
+*getstrlen("<string>")
+*charisalpha("<string>",<position>)
+*charat(<string>,<index>)
+*setchar(<string>,<char>,<index>)
+*insertchar(<string>,<char>,<index>)
+*delchar(<string>,<index>)
+*strtoupper(<string>)
+*strtolower(<string>)
+*charisupper(<string>,<index>)
+*charislower(<string>,<index>)
+*substr(<string>,<start_index>,<end_index>)
+*explode(<dest_array>,<string>,<delimiter>)
+*implode(<string_array>{,<glue>})
+*sprintf(<format>{,param{,param{,...}}})
+*sscanf(<string>,<format>{,param{,param{,...}}})
+*strpos(<haystack>,<needle>{,<offset>})
+*replacestr(<input>, <search>, <replace>{, <usecase>{, <count>}})
+*countstr(<input>, <search>{, <usecase>})
+*setfont <font>;
+*showdigit <value>{,<type>};
+*petskillbonus <bonus type>,<value>,<duration>,<delay>;
+*petrecovery <status type>,<delay>;
+*petloot <max items>;
+*petskillsupport <skill id>,<skill level>,<delay>,<percent hp>,<percent sp>;
+*petskillsupport "<skill name>",<skill level>,<delay>,<percent hp>,<percent sp>;
+*petskillattack <skill id>,<damage>,<number of attacks>,<rate>,<bonusrate>;
+*petskillattack "<skill name>",<damage>,<number of attacks>,<rate>,<bonusrate>;
+*bpet;
+*makepet <pet id>;
+*homshuffle;
+*setcell "<map name>",<x1>,<y1>,<x2>,<y2>,<type>,<flag>;
+*checkcell ("<map name>",<x>,<y>,<type>);
+*setwall "<map name>",<x>,<y>,<size>,<dir>,<shootable>,"<name>";
+*delwall "<name>";
+*readbook <book id>,<page>;
+*instance_create("<instance name>",<owner id>{,<optional owner_type>});
+*instance_destroy {<instance id>};
+*instance_attachmap("<map name>",<instance id>{,<use base name>{,"<new map name>"}});
+*instance_detachmap "<map name>"{,<instance id>};
+*instance_init <instance id>;
+*instance_announce <instance id>,"<text>",<flag>{,<fontColor>{,<fontType>{,<fontSize>{,<fontAlign>{,<fontY>}}}}};
+*instance_attach <instance id>;
+*instance_npcname("<npc name>"{,<instance id>});
+*has_instance("<map name>"{,<instance id>});
+*has_instance2("<map name>");
+*instance_id();
+*instance_warpall "<map name>",<x>,<y>{,<instance id>};
+*instance_set_timeout <alive timeout>,<idle timeout>{,<instance id>};
+*instance_check_party(<party id>{,<amount>{,<min>{,<max>}}});
+*instance_check_guild(<guild_id>{,<amount>{,<min>{,<max>}}});
+*instance_set_respawn(<map_name>,<x>,<y>{,<instance_id>});
+*instance_mapname("<map name>"{,<instance id>})
+*questinfo <Quest ID>, <Icon> {, <Map Mark Color>{, <Job Class>}};
+*setquest <ID>;
+*questinfo is set, and the same ID is specified here, the icon will be cleared when the quest is set.
+*completequest <ID>{,<ID2>};
+*erasequest <ID>{,<ID2>};
+*changequest <ID>,<ID2>;
+*questprogress(<ID>{,PLAYTIME|HUNTING})
+*questactive(<ID>)
+*showevent <icon>{,<mark color>}
+*waitingroom2bg_single(<battle group>,"<mapname>",<x>,<y>,"<npc name>");
+*waitingroom2bg("<mapname>",<x>,<y>,"<On Quit Event>","<On Death Event>"{,"<npc name>"});
+*bg_team_setxy <Battle Group ID>,<x>,<y>;
+*bg_warp <Battle Group>,"<Mapname>",<x>,<y>;
+*bg_monster <Battle Group>,"<map name>",<x>,<y>,"<name to show>",<mob id>,"<event label>";
+*bg_monster(<Battle Group>,"<map name>",<x>,<y>,"<name to show>",<mob id>,"<event label>");
+*bg_monster_set_team <GID>,<Battle Group>;
+*bg_leave;
+*bg_destroy <Batte Group>;
+*areapercentheal "<mapname>",<x1>,<y1>,<x2>,<y2>,<hp>,<sp>;
+*bg_get_data(<Battle Group>,<type>);
+*bg_getareausers(<battle group>,<map name>,<x0>,<y0>,<x1>,<y1>);
+*bg_updatescore "<mapname>",<Guillaume Score>,<Croix Score>;
+*mercenary_create <class>,<contract time>;
+*mercenary_heal <hp>,<sp>;
+*mercenary_sc_start <type>,<tick>,<val1>;
+*mercenary_get_calls(<guild>);
+*mercenary_set_calls <guild>,<value>;
+*mercenary_get_faith(<guild>);
+*mercenary_set_faith <guild>,<value>;
+*getmercinfo(<type>{,<char id>});
+*queue();
+*queuesize(<queue_id>);
+*queueadd(<queue_id>,<var_id>);
+*queueremove(<queue_id>,<var_id>);
+*queueopt(<queue_id>,<optionType>,{Optional <option val>});
+*queuedel(<queue_id>);
+*queueiterator(<queue_id>);
+*qicheck(<queue_iterator_id>);
+*qiget(<queue_iterator_id>);
+*qiclear(<queue_iterator_id>);
+*openshop({NPC_Name});
+*sellitem <Item_ID>{,<price>{,<qty>}};
+*stopselling <Item_ID>;
+*setcurrency <Val1>{,<Val2>};
+*Cash* Points field
+*tradertype(<Type>);
+*purchaseok();
+*shopcount(<Item_ID>);
