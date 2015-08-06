@@ -22,81 +22,199 @@ patterns:
 
 
 - comment: Comentários
-  name: comment.line.double-slash.cronus
+  name: comment.line.double-slash.cronus #OK
   match: \/\/.*$ #//\S* #//[\s\S]*
 
 
 - comment: Texto
-  name: string.quoted.double.cronus
+  name: string.quoted.double.cronus #OK
   begin: \"
   end: \"
   patterns:
         # Cores
         - match: \^([0-9]|[a-f]|[A-F]){6}
-          name: constant.other.cronus
+          name: constant.other.cronus #OK
+
+
 - comment: Texto single quote
-  name: string.quoted.single.cronus
+  name: string.quoted.single.cronus #OK
   begin: \'
   end: \'
   patterns:
         # Cores
         - match: \^([0-9]|[a-f]|[A-F]){6}
-          name: constant.other.cronus
+          name: constant.other.cronus #OK
 
 
 - comment: Números
-  name: constant.numeric.cronus
+  name: constant.numeric.cronus #OK
   match: -?(?:[0-9]+(?:\.[0-9]*)?|(?:[0-9]+)?\.[0-9]+) #(?:\d*\.)?\d+
 
 
 - comment: Labels
-  name: keyword.operator.cronus #On([a-zA-Z0-9])* #
+  name: string.interpolated.cronus #keyword.operator.cronus #On([a-zA-Z0-9])* #OK
   match: (OnTimer|OnClock|OnMinute|OnHour|OnDay|OnInit|OnInterIfInit|OnInterIfInitOnce|OnAgitStart|OnAgitEnd|OnAgitInit|OnAgitStart2|OnAgitEnd2|OnAgitInit2|OnTouch|OnTouch_|OnUnTouch|OnPCLoginEvent|OnPCLogoutEvent|OnPCBaseLvUpEvent|OnPCJobLvUpEvent|OnPCDieEvent|OnPCKillEvent|OnNPCKillEvent|OnPCLoadMapEvent|OnCountFunds|OnPayFunds|On.*:|\w*:)
 
 
-- name: comment.block.cronus
+- name: comment.block.cronus #OK
   begin: /\*
   end: \*/
 
 
-
-- comment: operators
-  name: keyword.operator.cronus
-  match: ([\+\-\*\%\=\&\|\~\^\<\>\?\:\!\/]+)
-
-
-
-
-- name: support.function.cronus
+- name: support.function.cronus #OK
   comment: Keywords
-  match: (message|mes|next|close2|close|end|setd|getd|getvariableofnpc|goto|menu|select|prompt|input|callfunc|callsub|getargcount|getarg|return|function|is_function|if|else|while|for|freeloop|setarray|cleararray|copyarray|deletearray|strcharinfo|strnpcinfo|charid2sd|getarraysize|getelementofarray|readparam|getcharid|getnpcid|getchildid|getmotherid|getfatherid|ispartneron|getpartnerid|getpartyname|getpartymember|getpartyleader|getlook|getsavepoint|getcharip|sit|stand|issit|getequipid|getequipname|getitemname|getbrokenid|getbrokencount|getequipisequiped|getequipisenableref|getequiprefinerycnt|getequipweaponlv|getequippercentrefinery|getareadropitem|getequipcardcnt|getinventorylist|getcartinventorylist|cardscnt|getrefine|getnameditem|getitemslots|getiteminfo|getequipcardid|getmapxy|getgmlevel|getgroupid|gettimetick|gettimestr|gettime|getmapusers|getareausers|getusersname|getusers|getguildname|getguildmasterid|getguildmaster|getcastlename|getcastledata|setcastledata|getgdskilllv|requestguildinfo|getmapguildusers|getguildmember|getskilllv|getskilllist|getpetinfo|petstat|getmonsterinfo|addmonsterdrop|delmonsterdrop|getmobdrops|skillpointcount|getscrate|playerattached|isloggedin|checkweight2|checkweight|basicskillcheck|checkoption1|checkoption2|checkoption|setoption|setcart|checkcart|setfalcon|checkfalcon|setmount|checkmount|setcashmount|hascashmount|checkwug|checkvending|checkchatting|checkidle|agitcheck2|agitcheck|isnight|checkre|isequippedcnt|isequipped|checkequipedcard|getequipisidentify|attachrid|detachrid|rid2name|dispbottom|showscript|areawarp|warpparty|warpchar|warpguild|warppartner|savepoint|heal|itemheal|percentheal|recovery|jobchange|jobname|eaclass|roclass|changebase|classchange|changesex|getexp|setlook|changelook|pushpc|get_version|montransform|getitem2|getitembound2|getitembound|getitem|countbound|checkbound|getnameditem|rentitem|makeitem|cleanarea|cleanmap|searchitem|delitem2|delitem|countitem2|countitem|groupranditem|getrandgroupitem|packageitem|enable_items|disable_items|itemskill|itemeffect|consumeitem|produce|cooking|makerune|successremovecards|failedremovecards|repairall|repair|successrefitem|failedrefitem|downrefitem|unequip|clearitem|equip2|equip|autoequip|buyingstore|searchstores|delequip|openstorage|openmail|openauction|guildopenstorage|guildchangegm|guildgetexp|guildskill|resetlvl|resetstatus|resetskill|sc_start2|sc_start4|sc_start|sc_end|getstatus|skilleffect|npcskilleffect|specialeffect2|specialeffect|statusup2|statusup|bonus2|bonus3|bonus4|bonus5|bonus|autobonus2|autobonus3|autobonus|skill|addtoskill|addtoskill|nude|disguise|undisguise|marriage|wedding|divorce|pcfollow|pcstopfollow|pcblockmove|monster|areamonster|areamobuseskill|killmonsterall|killmonster|strmobinfo|mobcount|clone|summon|homevolution|gethominfo|morphembryo|hommutate|checkhomcall|unitwalk|unitkill|unitwarp|unitattack|unitstop|unittalk|unitemote|disablenpc|enablenpc|hideonnpc|hideoffnpc|doevent|donpcevent|npctalk|setnpcdisplay|deltimer|addtimercount|addtimer|initnpctimer|stopnpctimer|startnpctimer|setnpctimer|getnpctimer|attachnpctimer|detachnpctimer|sleep2|sleep|awake|progressbar|announce|mapannounce|areaannounce|callshop|npcshopitem|npcshopadditem|npcshopdelitem|npcshopattach|delwaitingroom|enablewaitingroomevent|disablewaitingroomevent|getwaitingroomstate|warpwaitingpc|kickwaitingroomall|setmapflagnosave|setmapflag|removemapflag|getmapflag|setbattleflag|getbattleflag|warpportal|mapwarp|maprespawnguildid|agitstart2|agitend2|agitstart|agitend|gvgon|gvgoff|flagemblem|guardianinfo|guardian|npcspeed|npcwalkto|npcstop|movenpc|debugmes|logmes|globalmes|channelmes|rand|viewpoint|cutin|emotion|misceffect|soundeffectall|soundeffect|playbgmall|playbgm|pvpon|pvpoff|atcommand|charcommand|bindatcmd|unbindatcmd|useatcmd|unitskilluseid|unitskillusepos|npcskill|setnpcdistance|getnpcdir|setnpcdir|getnpcclass|day|night|pcre_match|defpattern|activatepset|deactivatepset|deletepset|pow|log10|sqrt|distance|min|max|md5|query_sql|query_logsql|escape_sql|setiteminfo|setitemscript|atoi|axtoi|compare|strcmp|getstrlen|charisalpha|charat|setchar|insertchar|delchar|strtoupper|strtolower|strtol|charisupper|charislower|substr|explode|implode|sprintf|sscanf|strpos|replacestr|countstr|setfont|showdigit|petskillbonus|petrecovery|petloot|petskillsupport|petskillattack|bpet|makepet|pet|homshuffle|setcell|checkcell|setwall|delwall|readbook|instance_create|instance_destroy|instance_attachmap|instance_detachmap|instance_init|instance_announce|instance_attach|instance_npcname|has_instance|has_instance2|instance_id|instance_warpall|instance_set_timeout|instance_check_party|instance_check_guild|instance_set_respawn|instance_mapname|questinfo|setquest|questinfo|completequest|erasequest|changequest|questprogress|questactive|showevent|waitingroom2bg_single|waitingroom2bg|waitingroom|bg_team_setxy|bg_warp|bg_monster_set_team|bg_monster|bg_leave|bg_destroy|areapercentheal|bg_get_data|bg_getareausers|bg_updatescore|mercenary_create|mercenary_heal|mercenary_sc_start|mercenary_get_calls|mercenary_set_calls|mercenary_get_faith|mercenary_set_faith|getmercinfo|queuesize|queueadd|queueremove|queueopt|queuedel|queueiterator|queue|qicheck|qiget|qiclear|openshop|sellitem|stopselling|setcurrency|tradertype|purchaseok|shopcount|set|duplicate|warp|do)
+  match: (?i)(message|mes|next|close2|close|end|setd|getd|getvariableofnpc|goto|menu|select|prompt|input|callfunc|callsub|getargcount|getarg|return|function|is_function|if|else|while|for|freeloop|setarray|cleararray|copyarray|deletearray|strcharinfo|strnpcinfo|charid2sd|getarraysize|getelementofarray|readparam|getcharid|getnpcid|getchildid|getmotherid|getfatherid|ispartneron|getpartnerid|getpartyname|getpartymember|getpartyleader|getlook|getsavepoint|getcharip|sit|stand|issit|getequipid|getequipname|getitemname|getbrokenid|getbrokencount|getequipisequiped|getequipisenableref|getequiprefinerycnt|getequipweaponlv|getequippercentrefinery|getareadropitem|getequipcardcnt|getinventorylist|getcartinventorylist|cardscnt|getrefine|getnameditem|getitemslots|getiteminfo|getequipcardid|getmapxy|getgmlevel|getgroupid|gettimetick|gettimestr|gettime|getmapusers|getareausers|getusersname|getusers|getguildname|getguildmasterid|getguildmaster|getcastlename|getcastledata|setcastledata|getgdskilllv|requestguildinfo|getmapguildusers|getguildmember|getskilllv|getskilllist|getpetinfo|petstat|getmonsterinfo|addmonsterdrop|delmonsterdrop|getmobdrops|skillpointcount|getscrate|playerattached|isloggedin|checkweight2|checkweight|basicskillcheck|checkoption1|checkoption2|checkoption|setoption|setcart|checkcart|setfalcon|checkfalcon|setmount|checkmount|setcashmount|hascashmount|checkwug|checkvending|checkchatting|checkidle|agitcheck2|agitcheck|isnight|checkre|isequippedcnt|isequipped|checkequipedcard|getequipisidentify|attachrid|detachrid|rid2name|dispbottom|showscript|areawarp|warpparty|warpchar|warpguild|warppartner|savepoint|heal|itemheal|percentheal|recovery|jobchange|jobname|eaclass|roclass|changebase|classchange|changesex|getexp|setlook|changelook|pushpc|get_version|montransform|getitem2|getitembound2|getitembound|getitem|countbound|checkbound|getnameditem|rentitem|makeitem|cleanarea|cleanmap|searchitem|delitem2|delitem|countitem2|countitem|groupranditem|getrandgroupitem|packageitem|enable_items|disable_items|itemskill|itemeffect|consumeitem|produce|cooking|makerune|successremovecards|failedremovecards|repairall|repair|successrefitem|failedrefitem|downrefitem|unequip|clearitem|equip2|equip|autoequip|buyingstore|searchstores|delequip|openstorage|openmail|openauction|guildopenstorage|guildchangegm|guildgetexp|guildskill|resetlvl|resetstatus|resetskill|sc_start2|sc_start4|sc_start|sc_end|getstatus|skilleffect|npcskilleffect|specialeffect2|specialeffect|statusup2|statusup|bonus2|bonus3|bonus4|bonus5|bonus|autobonus2|autobonus3|autobonus|skill|addtoskill|addtoskill|nude|disguise|undisguise|marriage|wedding|divorce|pcfollow|pcstopfollow|pcblockmove|monster|areamonster|areamobuseskill|killmonsterall|killmonster|strmobinfo|mobcount|clone|summon|homevolution|gethominfo|morphembryo|hommutate|checkhomcall|unitwalk|unitkill|unitwarp|unitattack|unitstop|unittalk|unitemote|disablenpc|enablenpc|hideonnpc|hideoffnpc|doevent|donpcevent|npctalk|setnpcdisplay|deltimer|addtimercount|addtimer|initnpctimer|stopnpctimer|startnpctimer|setnpctimer|getnpctimer|attachnpctimer|detachnpctimer|sleep2|sleep|awake|progressbar|announce|mapannounce|areaannounce|callshop|npcshopitem|npcshopadditem|npcshopdelitem|npcshopattach|delwaitingroom|enablewaitingroomevent|disablewaitingroomevent|getwaitingroomstate|warpwaitingpc|kickwaitingroomall|setmapflagnosave|setmapflag|removemapflag|getmapflag|setbattleflag|getbattleflag|warpportal|mapwarp|maprespawnguildid|agitstart2|agitend2|agitstart|agitend|gvgon|gvgoff|flagemblem|guardianinfo|guardian|npcspeed|npcwalkto|npcstop|movenpc|debugmes|logmes|globalmes|channelmes|rand|viewpoint|cutin|emotion|misceffect|soundeffectall|soundeffect|playbgmall|playbgm|pvpon|pvpoff|atcommand|charcommand|bindatcmd|unbindatcmd|useatcmd|unitskilluseid|unitskillusepos|npcskill|setnpcdistance|getnpcdir|setnpcdir|getnpcclass|day|night|pcre_match|defpattern|activatepset|deactivatepset|deletepset|pow|log10|sqrt|distance|min|max|md5|query_sql|query_logsql|escape_sql|setiteminfo|setitemscript|atoi|axtoi|compare|strcmp|getstrlen|charisalpha|charat|setchar|insertchar|delchar|strtoupper|strtolower|strtol|charisupper|charislower|substr|explode|implode|sprintf|sscanf|strpos|replacestr|countstr|setfont|showdigit|petskillbonus|petrecovery|petloot|petskillsupport|petskillattack|bpet|makepet|pet|homshuffle|setcell|checkcell|setwall|delwall|readbook|instance_create|instance_destroy|instance_attachmap|instance_detachmap|instance_init|instance_announce|instance_attach|instance_npcname|has_instance|has_instance2|instance_id|instance_warpall|instance_set_timeout|instance_check_party|instance_check_guild|instance_set_respawn|instance_mapname|questinfo|setquest|questinfo|completequest|erasequest|changequest|questprogress|questactive|showevent|waitingroom2bg_single|waitingroom2bg|waitingroom|bg_team_setxy|bg_warp|bg_monster_set_team|bg_monster|bg_leave|bg_destroy|areapercentheal|bg_get_data|bg_getareausers|bg_updatescore|mercenary_create|mercenary_heal|mercenary_sc_start|mercenary_get_calls|mercenary_set_calls|mercenary_get_faith|mercenary_set_faith|getmercinfo|queuesize|queueadd|queueremove|queueopt|queuedel|queueiterator|queue|qicheck|qiget|qiclear|openshop|sellitem|stopselling|setcurrency|tradertype|purchaseok|shopcount|set|duplicate|warp|do)
 
 
 
 - comment: Constantes e Variáveis nativas
-  name: variable.language.cronus
-  match: ()
+  name: constant.language.cronus #OK
+  match: (Zeny|CASHPOINTS|Hp|MaxHp|Sp|MaxSp|StatusPoint|SkillPoint|BaseLevel|JobLevel|NextBaseExp|NextJobExp|Weight|MaxWeight|Sex|Class|Upper|BaseClass|BaseJob|Karma|Manner|PACKETVER|MAX_LEVEL|MAX_STORAGE|MAX_GUILD_STORAGE|MAX_CART|MAX_INVENTORY|MAX_ZENY|MAX_BG_MEMBERS|MAX_CHAT_USERS|MAX_REFINE)    #Faltando alguma variável ou constante? Corrigir meia identificação
 
 
 - comment: Mapflags
-  name: meta.cronus
-  match: (.+)\t(mapflag)\t(.+)
+  name: meta.cronus #OK
+  match: ([\w\@\-]+)\t(mapflag)\t(.+)
+  #<map name>%TAB%mapflag%TAB%<flag>
   captures:
-    '1': {name: constant.character.cronus}      #Nome do mapa (Character)
-    '2': {name: entity.name.section.cronus}     #keyword MAPFLAG (Section Name)
-    '3': {name: entity.name.function.cronus}    #Mapflag aplicado (Function Name)
+    '1': {name: string.unquoted.cronus}         #Nome do mapa
+    '2': {name: entity.name.type.cronus}        #keyword MAPFLAG
+    '3': {name: entity.name.function.cronus}    #Mapflag aplicado
 
 - comment: Floating NPC Script
-  name: meta.cronus
-  match: \t(script)\t(.+)\t(-1)                 #adicionar Suporte ao - no início
+  name: meta.cronus #OK
+  match: (\-)\t(script)\t(.+)\t(-1)
+  #-%TAB%script%TAB%<NPC Name>%TAB%-1
   captures:
-    '1':  {name: keyword.operator.cronus}
-    '2':  {name: entity.name.function.cronus} 
-    '3':  {name: constant.character.cronus}
+    '1':  {name: keyword.operator.cronus}       #Sinal -
+    '2':  {name: entity.name.type.cronus}       #keyword SCRIPT
+    '3':  {name: string.unquoted.cronus}        #Nome do NPC
+    '4':  {name: constant.numeric.cronus}       #ID do Sprite
     
+
+
 - comment: NPC Header
+  name: meta.cronus   #OK                       #Adicionar #hidden name e ::Unique names
+  match: (\w+),(\d+),(\d+),(\d)\t(script)\t(.+)\t(\w+)
+  #<map name>,<x>,<y>,<facing>%TAB%script%TAB%<NPC Name>%TAB%<sprite id>
+  captures:
+    '1': {name: string.unquoted.cronus}         #Nome do mapa
+    '2': {name: constant.numeric.cronus}        #Pos X
+    '3': {name: constant.numeric.cronus}        #Pos Y
+    '4': {name: constant.numeric.cronus}        #Facing
+    '5': {name: entity.name.type.cronus}        #Keyword SCRIPT
+    '6': {name: string.unquoted.cronus}         #Nome do NPC
+    '7': {name: constant.numeric.cronus}        #ID do Sprite
+
+- comment: Permanent Monster Spawn
   name: meta.cronus
-  match: (.*),(\d+),(\d+),(\d)\t(script)\t(.+)\t(\d+)
+  match: (\w+),(\d+),(\d+),(\d+),(\d+)\t(monster|boss_monster)\t(.+)(,\d+)?\t(\d+),(\d+),(\d+),(\d+),(.+)(,(\d))?(,(\d))?
+  #<map name>,<x>,<y>,<xs>,<ys>%TAB%monster%TAB%<monster name>%TAB%<mob id>,<amount>,<delay1>,<delay2>,<event>{,<mob size>,<mob ai>}
+  captures:
+    '1': {name: string.unquoted.cronus}         #Nome do mapa
+    '2': {name: constant.numeric.cronus}        #Pos X
+    '3': {name: constant.numeric.cronus}        #Pos Y
+    '4': {name: constant.numeric.cronus}        #Variação X
+    '5': {name: constant.numeric.cronus}        #Variação Y
+    '6': {name: entity.name.function.cronus}    #Keyword MONSTER
+    '7': {name: string.unquoted.cronus}         #Nome do monstro
+    '8': {name: constant.numeric.cronus}        #OPTIONAL LVL
+    '9': {name: constant.numeric.cronus}        #ID do monstro
+    '10': {name: constant.numeric.cronus}       #Quantidade
+    '11': {name: constant.numeric.cronus}       #Delay 1
+    '12': {name: constant.numeric.cronus}       #Delay 2
+    '13': {name: string.interpolated.cronus}    #Evento (Label)
+    '14': {name: meta.cronus}                   #Mob Size Container
+    '15': {name: constant.numeric.cronus}       #Mob Size
+    '16': {name: meta.cronus}                   #AI container
+    '17': {name: constant.numeric.cronus}       #Mob AI
+
+- comment: Warp Point
+  name: meta.cronus
+  match: (\w+),(\d+),(\d+)(,(\d)?)?\t(warp)\t(.+)\t(\d+),(\d+),(.+),(\d+),(\d+)
+  #<from map name>,<fromX>,<fromY>{,<facing>}%TAB%warp%TAB%<warp name>%TAB%<spanx>,<spany>,<to map name>,<toX>,<toY>
+  captures:
+    '1': {name: string.unquoted.cronus}         #Mapa de Origem
+    '2': {name: constant.numeric.cronus}        #Pos X
+    '3': {name: constant.numeric.cronus}        #Pos Y
+    '4': {name: meta.cronus}                    #Facing Container
+    '5': {name: constant.numeric.cronus}        #Facing
+    '6': {name: entity.name.function.cronus}    #Keyword WARP
+    '7': {name: string.unquoted.cronus}         #Nome do Warp
+    '8': {name: constant.numeric.cronus}        #Área X
+    '9': {name: constant.numeric.cronus}        #Área Y
+    '10': {name: string.unquoted.cronus}        #Mapa de Destino
+    '11': {name: constant.numeric.cronus}       #Pos X
+    '12': {name: constant.numeric.cronus}       #Pox Y
+
+
+
+- comment: Shop/Cashshop
+  name: meta.cronus
+  begin: (.+),(\d+),(\d+),(\d)\t(shop|cashshop)\t(.+)\t(\w+)
+  #<map name>,<x>,<y>,<facing>%TAB%shop%TAB%<NPC Name>%TAB%<sprite id>,<itemid>:<price>{,<itemid>:<price>...}
+  beginCaptures:
+    '1': {name: string.unquoted.cronus}         #Nome do mapa
+    '2': {name: constant.numeric.cronus}        #Pos X
+    '3': {name: constant.numeric.cronus}        #Pos Y
+    '4': {name: constant.numeric.cronus}        #Facing
+    '5': {name: entity.name.function.cronus}    #Keyword SHOP
+    '6': {name: string.unquoted.cronus}         #Nome do NPC
+    '7': {name: constant.numeric.cronus}        #ID do Sprite
+  end: (,(\d+|\-1):(\d+|\-1))$
+  endCaptures:
+    '1': {name: meta.cronus}                    #container
+    '2': {name: constant.numeric.cronus}        #ID do item
+    '3': {name: variable.parameter.cronus}      #Preço do item
+  patterns:
+    - name: meta.cronus
+      match: (,(\d+|\-1):(\d+|\-1))
+      captures:
+        '1': {name: meta.cronus}                #container
+        '2': {name: constant.numeric.cronus}    #ID do item
+        '3': {name: variable.parameter.cronus}  #Preço do item
+
+
+
+- comment: Hidden Shop/Cashshop
+  name: meta.cronus
+  begin: (\-)\t(shop|cashshop)\t(.+)\t(\w+)     #adicionar Suporte ao - no início
+  #-%TAB%shop%TAB%<NPC Name>%TAB%<sprite id>,<itemid>:<price>{,<itemid>:<price>...}
+  beginCaptures:
+    '1': {name: keyword.operator.cronus}        #Sinal -
+    '2': {name: entity.name.function.cronus}    #Keyword SHOP
+    '3': {name: string.unquoted.cronus}         #Nome do NPC
+    '4': {name: constant.numeric.cronus}        #Sprite
+  end: (,(\d+|\-1):(\d+|\-1))$
+  endCaptures:
+    '1': {name: meta.cronus}                    #container
+    '2': {name: constant.numeric.cronus}        #ID do item
+    '3': {name: variable.parameter.cronus}      #Preço do item
+  patterns:
+    - name: meta.cronus
+      match: (,(\d+|\-1):(\d+|\-1))
+      captures:
+        '1': {name: meta.cronus}                #container
+        '2': {name: constant.numeric.cronus}    #ID do item
+        '3': {name: variable.parameter.cronus}  #Preço do item  
+
+- comment: Trader
+  name: meta.cronus
+  match: (.+),(\d+),(\d+),(\d)\t(trader)\t(.+)\t(\w+)
+  #<map name>,<x>,<y>,<facing>%TAB%trader%TAB%<NPC Name>%TAB%<sprite id>
+  captures:
+    '1': {name: variable.parameter.cronus}      #Nome do mapa
+    '2': {name: constant.character.cronus}      #Pos X
+    '3': {name: constant.character.cronus}      #Pos Y
+    '4': {name: constant.character.cronus}      #Facing
+    '5': {name: keyword.operator.cronus}        #Keyword TRADER
+    '6': {name: entity.name.function.cronus}    #Nome do Trader
+    '7': {name: constant.character.cronus}      #Sprite
+
+- comment: Hidden Trader
+  name: meta.cronus
+  match: (\-)\t(trader)\t(.+)\t(-1)            #adicionar Suporte ao - no início
+  #-%TAB%trader%TAB%<NPC Name>%TAB%-1
   captures:
     '1': {name: variable.parameter.cronus}
     '2': {name: constant.character.cronus}
@@ -106,12 +224,64 @@ patterns:
     '6': {name: entity.name.function.cronus}
     '7': {name: constant.character.cronus}
 
-#PERMANENT MONSTER SPAWN
-#WARP POINT
-#SHOP
-#TRADER
-#DUPLICATE
-#FUNCTION
+#DUPLICATES
+
+- comment: Warp Duplicate
+  name: meta.cronus
+  match: (.+),(\d+),(\d+)(,\d)?\t(duplicate\((.+)\))\t(.+)\t(\d+),(\d+)
+  #<map name>,<x>,<y>{,<facing>}%TAB%duplicate(<label>)%TAB%<NPC Name>%TAB%<spanx>,<spany>
+  captures:
+    '1': {name: variable.parameter.cronus}
+    '2': {name: constant.character.cronus}
+    '3': {name: constant.character.cronus}
+    '4': {name: constant.character.cronus}
+    '5': {name: keyword.operator.cronus}
+    '6': {name: entity.name.function.cronus}
+    '7': {name: constant.character.cronus}
+
+- comment: Hidden shop/cashshop/npc
+  name: meta.cronus
+  match: (\-)\t(duplicate\((.+)\))\t(.+)\t(\w+)(,(\d+),(\d+))?
+  #-%TAB%duplicate(<label>)%TAB%<NPC Name>%TAB%<sprite id>{,<triggerX>,<triggerY>}
+  captures:
+    '1': {name: variable.parameter.cronus}
+    '2': {name: constant.character.cronus}
+    '3': {name: constant.character.cronus}
+    '4': {name: constant.character.cronus}
+    '5': {name: keyword.operator.cronus}
+    '6': {name: entity.name.function.cronus}
+    '7': {name: constant.character.cronus}
+
+- comment: shop/cashshop/npc
+  name: meta.cronus
+  match: (.+),(\d+),(\d+),(\d)\t(duplicate\((.+)\))\t(.+(\#\w+)?)\t(\w+)(,(\d+),(\d+))?  #com hashtag e nome
+  #<map name>,<x>,<y>,<facing>%TAB%duplicate(<label>)%TAB%<NPC Name>%TAB%<sprite id>{,<triggerX>,<triggerY>}
+  captures:
+    '1': {name: variable.parameter.cronus}
+    '2': {name: constant.character.cronus}
+    '3': {name: constant.character.cronus}
+    '4': {name: constant.character.cronus}
+    '5': {name: keyword.operator.cronus}
+    '6': {name: entity.name.function.cronus}
+    '7': {name: constant.character.cronus}
+
+- comment: Function
+  name: meta.cronus
+  match: (function)(.+) #((function)\t(script)\t(\w+)\t|(function)(\s*)(\w+))
+  #function%TAB%script%TAB%<function name>%TAB%{<code>}
+  captures:
+    '1': {name: variable.parameter.cronus}
+    '2': {name: entity.name.function.cronus}
+    '3': {name: entity.name.function.cronus}
+    '4': {name: constant.character.cronus}
+    '5': {name: keyword.operator.cronus}
+    '6': {name: entity.name.function.cronus}
+    '7': {name: constant.character.cronus}
+
+- comment: operators
+  name: keyword.operator.cronus
+  match: ([\+\-\*\%\=\&\|\~\^\<\>\?\:\!\/]+)
+
 
 #- comment: SWITCH CASE
 #  name: entity.name.function.cronus
@@ -125,13 +295,13 @@ patterns:
 
 #SEMPRE QUE USAR : DEVE-SE COLOCAR ENTRE PARENTESES
 
-#LEMBRAR DE INCLUIR CAPTURES PARA: Headers de NPCs, Comandos multi tipados (mes, menu), funções, shops, atribuições e variáveis, duplicates, Mapflags
+#LEMBRAR DE CONSERTAR CAPTURES PARA: Headers de NPCs, Comandos multi tipados (mes, menu), funções, shops, atribuições e variáveis, duplicates, Mapflags
 
-#ADICIONAR SUPORTE PARA MULTICASE (Remover case sensitive)
+#ADICIONAR SUPORTE PARA MULTICASE (Remover case sensitive) (OK!)
 
 #ADICIONAR SUPORTE PARA OS NOMES DE MAPAS (OK!)
 
-#ADICIONAR CONSTANTES E VARIÁVEIS NATIVAS
+#ADICIONAR CONSTANTES E VARIÁVEIS NATIVAS ()
 
 #SWITCH → CASE
 
@@ -158,7 +328,7 @@ patterns:
   #end: \;
 
 - comment: Variáveis
-  name: variable.parameter.cronus
+  name: variable.language.cronus #OK
   match: ([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?
 
 
