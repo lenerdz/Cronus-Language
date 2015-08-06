@@ -262,6 +262,8 @@ patterns:
     '6': {name: entity.name.function.cronus}
     '7': {name: constant.character.cronus}
 
+#FIM das Duplicates
+
 - comment: Function
   name: meta.cronus
   match: (function)(.+) #((function)\t(script)\t(\w+)\t|(function)(\s*)(\w+))
