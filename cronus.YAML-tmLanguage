@@ -203,13 +203,13 @@ patterns:
   match: (.+),(\d+),(\d+),(\d)\t(trader)\t(.+)\t(\w+)
   #<map name>,<x>,<y>,<facing>%TAB%trader%TAB%<NPC Name>%TAB%<sprite id>
   captures:
-    '1': {name: variable.parameter.cronus}      #Nome do mapa
-    '2': {name: constant.character.cronus}      #Pos X
-    '3': {name: constant.character.cronus}      #Pos Y
-    '4': {name: constant.character.cronus}      #Facing
-    '5': {name: keyword.operator.cronus}        #Keyword TRADER
-    '6': {name: entity.name.function.cronus}    #Nome do Trader
-    '7': {name: constant.character.cronus}      #Sprite
+    '1': {name: string.unquoted.cronus}         #Nome do mapa
+    '2': {name: constant.numeric.cronus}        #Pos X
+    '3': {name: constant.numeric.cronus}        #Pos Y
+    '4': {name: constant.numeric.cronus}        #Facing
+    '5': {name: entity.name.function.cronus}    #Keyword TRADER
+    '6': {name: string.unquoted.cronus}         #Nome do Trader
+    '7': {name: constant.numeric.cronus}        #Sprite
 
 - comment: Hidden Trader
   name: meta.cronus
