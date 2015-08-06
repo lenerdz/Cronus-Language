@@ -216,13 +216,10 @@ patterns:
   match: (\-)\t(trader)\t(.+)\t(-1)            #adicionar Suporte ao - no início
   #-%TAB%trader%TAB%<NPC Name>%TAB%-1
   captures:
-    '1': {name: variable.parameter.cronus}
-    '2': {name: constant.character.cronus}
-    '3': {name: constant.character.cronus}
-    '4': {name: constant.character.cronus}
-    '5': {name: keyword.operator.cronus}
-    '6': {name: entity.name.function.cronus}
-    '7': {name: constant.character.cronus}
+    '1':  {name: keyword.operator.cronus}       #Sinal -
+    '2': {name: entity.name.function.cronus}    #Keyword TRADER
+    '3': {name: string.unquoted.cronus}         #Nome do Trader
+    '4':  {name: constant.numeric.cronus}       #ID do Sprite
 
 #DUPLICATES
 
