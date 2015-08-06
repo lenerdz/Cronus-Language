@@ -277,6 +277,8 @@ patterns:
     '6': {name: entity.name.function.cronus}
     '7': {name: constant.character.cronus}
 
+#ADICIONAR SUPORTE À CHAMADA DE FUNÇÕES, COM ARGUMENTOS E ETC.
+
 - comment: operators
   name: keyword.operator.cronus
   match: ([\+\-\*\%\=\&\|\~\^\<\>\?\:\!\/]+)
