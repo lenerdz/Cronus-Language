@@ -279,6 +279,11 @@ patterns:
 
 #ADICIONAR SUPORTE À CHAMADA DE FUNÇÕES, COM ARGUMENTOS E ETC.
 
+- comment: funções
+  name: support.function.cronus
+  begin: \w+\(
+  end: \)\;
+
 - comment: operators
   name: keyword.operator.cronus
   match: ([\+\-\*\%\=\&\|\~\^\<\>\?\:\!\/]+)

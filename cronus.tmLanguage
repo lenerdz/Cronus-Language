@@ -799,6 +799,16 @@
 			<string>meta.cronus</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>\w+\(</string>
+			<key>comment</key>
+			<string>funções</string>
+			<key>end</key>
+			<string>\)\;</string>
+			<key>name</key>
+			<string>support.function.cronus</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>operators</string>
 			<key>match</key>
