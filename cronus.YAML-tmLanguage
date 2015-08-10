@@ -281,8 +281,7 @@ patterns:
 
 - comment: funções
   name: support.function.cronus
-  begin: \w+\(
-  end: \)\;
+  match: \w+(?=\(.*\))    #Positive Look ahead
 
 - comment: operators
   name: keyword.operator.cronus
