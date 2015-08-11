@@ -336,8 +336,6 @@ patterns:
   name: variable.language.cronus #OK
   match: ([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?
 
-#TESTE
-
 #- comment: menu
 #  name: keyword.other.cronus
 #  match: (menu(\s*(\"[^"]*\")\s*,\s*([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?\s*,?)+;)
