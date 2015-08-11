@@ -336,7 +336,7 @@ patterns:
   name: variable.language.cronus #OK
   match: ([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?
 
-#teste
+#teste 2
 
 #- comment: menu
 #  name: keyword.other.cronus
