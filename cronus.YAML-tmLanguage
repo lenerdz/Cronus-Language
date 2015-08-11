@@ -34,6 +34,7 @@ patterns:
         # Cores
         - match: \^([0-9]|[a-f]|[A-F]){6}
           name: constant.other.cronus #OK
+          #ADD SQL SUPPORT
 
 
 - comment: Texto single quote
@@ -335,9 +336,6 @@ patterns:
 - comment: Variáveis
   name: variable.language.cronus #OK
   match: ([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?
-
-#teste
-
 #- comment: menu
 #  name: keyword.other.cronus
 #  match: (menu(\s*(\"[^"]*\")\s*,\s*([$.#]?[@$.'#]?[_a-zA-Z][0-9]*)+\$?\s*,?)+;)
