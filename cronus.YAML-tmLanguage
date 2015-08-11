@@ -277,7 +277,7 @@ patterns:
     '6': {name: entity.name.function.cronus}
     '7': {name: constant.character.cronus}
 
-#ADICIONAR SUPORTE À CHAMADA DE FUNÇÕES, COM ARGUMENTOS E ETC.
+#ADICIONAR SUPORTE À CHAMADA DE FUNÇÕES, COM ARGUMENTOS E ETC. (OK!)
 
 - comment: funções
   name: support.function.cronus
