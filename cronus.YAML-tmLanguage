@@ -20,6 +20,13 @@ patterns:
 #       '2': {name: string.quoted.double.cronus}
 #       '3': {name: entity.name.function.cronus}
 
+- comment: Function
+  name: meta.cronus
+  match: (function)\s(\w+) #((function)\t(script)\t(\w+)\t|(function)(\s*)(\w+))
+  #function%TAB%script%TAB%<function name>%TAB%{<code>}
+  captures:
+    '1': {name: support.function.cronus}        #Keyword FUNCTION
+    '2': {name: entity.name.function.cronus}    #Nome da função
 
 - comment: Comentários
   name: comment.line.double-slash.cronus #OK
@@ -229,54 +236,47 @@ patterns:
   match: (.+),(\d+),(\d+)(,\d)?\t(duplicate\((.+)\))\t(.+)\t(\d+),(\d+)
   #<map name>,<x>,<y>{,<facing>}%TAB%duplicate(<label>)%TAB%<NPC Name>%TAB%<spanx>,<spany>
   captures:
-    '1': {name: variable.parameter.cronus}
-    '2': {name: constant.character.cronus}
-    '3': {name: constant.character.cronus}
-    '4': {name: constant.character.cronus}
-    '5': {name: keyword.operator.cronus}
-    '6': {name: entity.name.function.cronus}
-    '7': {name: constant.character.cronus}
+    '1': {name: string.unquoted.cronus}         #Nome do mapa
+    '2': {name: constant.numeric.cronus}        #Pos X
+    '3': {name: constant.numeric.cronus}        #Pos Y
+    '4': {name: constant.numeric.cronus}        #Facing
+    '5': {name: entity.name.function.cronus}    #Keyword DUPLICATE
+    '6': {name: string.interpolated.cronus}     #Label
+    '7': {name: string.unquoted.cronus}         #Nome do NPC
+    '8': {name: constant.numeric.cronus}        #Span X
+    '9': {name: constant.numeric.cronus}        #Span Y
 
 - comment: Hidden shop/cashshop/npc
   name: meta.cronus
   match: (\-)\t(duplicate\((.+)\))\t(.+)\t(\w+)(,(\d+),(\d+))?
   #-%TAB%duplicate(<label>)%TAB%<NPC Name>%TAB%<sprite id>{,<triggerX>,<triggerY>}
   captures:
-    '1': {name: variable.parameter.cronus}
-    '2': {name: constant.character.cronus}
-    '3': {name: constant.character.cronus}
-    '4': {name: constant.character.cronus}
-    '5': {name: keyword.operator.cronus}
-    '6': {name: entity.name.function.cronus}
-    '7': {name: constant.character.cronus}
+    '1': {name: keyword.operator.cronus}        #Sinal -
+    '2': {name: entity.name.function.cronus}    #Keyword DUPLICATE
+    '3': {name: string.interpolated.cronus}     #Label
+    '4': {name: string.unquoted.cronus}         #Nome do NPC
+    '5': {name: constant.numeric.cronus}        #ID do Sprite
+    '6': {name: meta.cronus}                    #Trigger Container
+    '7': {name: constant.numeric.cronus}        #Trigger X
+    '7': {name: constant.numeric.cronus}        #Trigger Y
 
 - comment: shop/cashshop/npc
   name: meta.cronus
   match: (.+),(\d+),(\d+),(\d)\t(duplicate\((.+)\))\t(.+(\#\w+)?)\t(\w+)(,(\d+),(\d+))?  #com hashtag e nome
   #<map name>,<x>,<y>,<facing>%TAB%duplicate(<label>)%TAB%<NPC Name>%TAB%<sprite id>{,<triggerX>,<triggerY>}
   captures:
-    '1': {name: variable.parameter.cronus}
-    '2': {name: constant.character.cronus}
-    '3': {name: constant.character.cronus}
-    '4': {name: constant.character.cronus}
-    '5': {name: keyword.operator.cronus}
-    '6': {name: entity.name.function.cronus}
-    '7': {name: constant.character.cronus}
-
-#FIM das Duplicates
-
-- comment: Function
-  name: meta.cronus
-  match: (function)(.+) #((function)\t(script)\t(\w+)\t|(function)(\s*)(\w+))
-  #function%TAB%script%TAB%<function name>%TAB%{<code>}
-  captures:
-    '1': {name: variable.parameter.cronus}
-    '2': {name: entity.name.function.cronus}
-    '3': {name: entity.name.function.cronus}
-    '4': {name: constant.character.cronus}
-    '5': {name: keyword.operator.cronus}
-    '6': {name: entity.name.function.cronus}
-    '7': {name: constant.character.cronus}
+    '1': {name: string.unquoted.cronus}         #Nome do Mapa
+    '2': {name: constant.numeric.cronus}        #Pos X
+    '3': {name: constant.numeric.cronus}        #Pos Y
+    '4': {name: constant.numeric.cronus}        #Facing
+    '5': {name: entity.name.function.cronus}    #Keyword DUPLICATE
+    '6': {name: string.interpolated.cronus}     #Label
+    '7': {name: string.unquoted.cronus}         #Nome do NPC
+    '8': {name: constant.character.cronus}      #Nome único (MUDAR)
+    '9': {name: constant.numeric.cronus}        #ID do Sprite
+    '10': {name: meta.cronus}                   #Trigger Container
+    '11': {name: constant.numeric.cronus}       #Trigger X
+    '12': {name: constant.numeric.cronus}       #Trigger Y
 
 #ADICIONAR SUPORTE À CHAMADA DE FUNÇÕES, COM ARGUMENTOS E ETC. (OK!)
 
