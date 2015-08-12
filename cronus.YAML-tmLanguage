@@ -2,7 +2,7 @@
 ---
 name: Cronus
 scopeName: source.cronus
-fileTypes: [crn]
+fileTypes: [txt]
 uuid: 350f24c5-ac9f-4d06-826d-cb87aed8e1cf
 
 patterns:
