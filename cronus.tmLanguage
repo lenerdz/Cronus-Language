@@ -4,12 +4,33 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>crn</string>
+		<string>txt</string>
 	</array>
 	<key>name</key>
 	<string>Cronus</string>
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.cronus</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.cronus</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function</string>
+			<key>match</key>
+			<string>(function)\s(\w+)</string>
+			<key>name</key>
+			<string>meta.cronus</string>
+		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Comentários</string>
@@ -92,7 +113,7 @@
 			<key>comment</key>
 			<string>Constantes e Variáveis nativas</string>
 			<key>match</key>
-			<string>(Zeny|CASHPOINTS|Hp|MaxHp|Sp|MaxSp|StatusPoint|SkillPoint|BaseLevel|JobLevel|NextBaseExp|NextJobExp|Weight|MaxWeight|Sex|Class|Upper|BaseClass|BaseJob|Karma|Manner|PACKETVER|MAX_LEVEL|MAX_STORAGE|MAX_GUILD_STORAGE|MAX_CART|MAX_INVENTORY|MAX_ZENY|MAX_BG_MEMBERS|MAX_CHAT_USERS|MAX_REFINE)</string>
+			<string>(Zeny|CASHPOINTS|Hp|MaxHp|Sp|MaxSp|StatusPoint|SkillPoint|BaseLevel|JobLevel|NextBaseExp|NextJobExp|Weight|MaxWeight|Sex|Class|Upper|BaseClass|BaseJob|Karma|Manner|PACKETVER|MAX_LEVEL|MAX_STORAGE|MAX_GUILD_STORAGE|MAX_CART|MAX_INVENTORY|MAX_ZENY|MAX_BG_MEMBERS|MAX_CHAT_USERS|MAX_REFINE)\W</string>
 			<key>name</key>
 			<string>constant.language.cronus</string>
 		</dict>
@@ -620,37 +641,47 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.cronus</string>
+					<string>string.unquoted.cronus</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>constant.numeric.cronus</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>constant.numeric.cronus</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>constant.numeric.cronus</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator.cronus</string>
+					<string>entity.name.function.cronus</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.cronus</string>
+					<string>string.interpolated.cronus</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>string.unquoted.cronus</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.cronus</string>
+				</dict>
+				<key>9</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.cronus</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -666,37 +697,37 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.cronus</string>
+					<string>keyword.operator.cronus</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>entity.name.function.cronus</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>string.interpolated.cronus</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>string.unquoted.cronus</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator.cronus</string>
+					<string>constant.numeric.cronus</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.cronus</string>
+					<string>meta.cronus</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>constant.numeric.cronus</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -712,89 +743,68 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.cronus</string>
+					<string>string.unquoted.cronus</string>
+				</dict>
+				<key>10</key>
+				<dict>
+					<key>name</key>
+					<string>meta.cronus</string>
+				</dict>
+				<key>11</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.cronus</string>
+				</dict>
+				<key>12</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.cronus</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>constant.numeric.cronus</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>constant.numeric.cronus</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>constant.character.cronus</string>
+					<string>constant.numeric.cronus</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator.cronus</string>
+					<string>entity.name.function.cronus</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.cronus</string>
+					<string>string.interpolated.cronus</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
+					<string>string.unquoted.cronus</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
 					<string>constant.character.cronus</string>
+				</dict>
+				<key>9</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.cronus</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>shop/cashshop/npc</string>
 			<key>match</key>
 			<string>(.+),(\d+),(\d+),(\d)\t(duplicate\((.+)\))\t(.+(\#\w+)?)\t(\w+)(,(\d+),(\d+))?</string>
-			<key>name</key>
-			<string>meta.cronus</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.cronus</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.cronus</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.cronus</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>constant.character.cronus</string>
-				</dict>
-				<key>5</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.operator.cronus</string>
-				</dict>
-				<key>6</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.cronus</string>
-				</dict>
-				<key>7</key>
-				<dict>
-					<key>name</key>
-					<string>constant.character.cronus</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>Function</string>
-			<key>match</key>
-			<string>(function)(.+)</string>
 			<key>name</key>
 			<string>meta.cronus</string>
 		</dict>

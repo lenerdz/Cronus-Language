@@ -77,8 +77,7 @@ patterns:
 
 - comment: Constantes e Variáveis nativas
   name: constant.language.cronus #OK
-  match: (Zeny|CASHPOINTS|Hp|MaxHp|Sp|MaxSp|StatusPoint|SkillPoint|BaseLevel|JobLevel|NextBaseExp|NextJobExp|Weight|MaxWeight|Sex|Class|Upper|BaseClass|BaseJob|Karma|Manner|PACKETVER|MAX_LEVEL|MAX_STORAGE|MAX_GUILD_STORAGE|MAX_CART|MAX_INVENTORY|MAX_ZENY|MAX_BG_MEMBERS|MAX_CHAT_USERS|MAX_REFINE)    #Faltando alguma variável ou constante? Corrigir meia identificação
-
+  match: (Zeny|CASHPOINTS|Hp|MaxHp|Sp|MaxSp|StatusPoint|SkillPoint|BaseLevel|JobLevel|NextBaseExp|NextJobExp|Weight|MaxWeight|Sex|Class|Upper|BaseClass|BaseJob|Karma|Manner|PACKETVER|MAX_LEVEL|MAX_STORAGE|MAX_GUILD_STORAGE|MAX_CART|MAX_INVENTORY|MAX_ZENY|MAX_BG_MEMBERS|MAX_CHAT_USERS|MAX_REFINE)\W    #Faltando alguma variável ou constante? Corrigir meia identificação
 
 - comment: Mapflags
   name: meta.cronus #OK
